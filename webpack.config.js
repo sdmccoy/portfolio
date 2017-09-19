@@ -1,30 +1,34 @@
-require('dotenv').config();
+'use strict';
 
+require('dotenv').config();
+const {DefinePlugin, EnvironmentPlugin} = require('webpack');
 const HTMLPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const UglifyPlugin = require('uglifyjs-webpack-plugin');
 const ExtractPlugin = require('extract-text-webpack-plugin');
-const { DefinePlugin, EnvironmentPlugin } = require('webpack');
 
+//if NODE_ENV is production string in env file then this will equal true boolean
 const production = process.env.NODE_ENV === 'production';
 
 let plugins = [
   new EnvironmentPlugin(['NODE_ENV']),
   new ExtractPlugin('bundle.[hash].css'),
-  new HTMLPlugin({ template: `${__dirname}/src/index.html` }),
+  new HTMLPlugin({template: `${__dirname}/src/index.html`}),
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
     __API_URL__: JSON.stringify(process.env.API_URL),
   }),
 ];
 
-if (production) {
+// production plugins
+if(production){
   plugins = plugins.concat([
     new CleanPlugin(),
     new UglifyPlugin(),
   ]);
 }
 
+// export config
 module.exports = {
   plugins,
   entry: `${__dirname}/src/main.js`,
@@ -33,6 +37,7 @@ module.exports = {
     path: `${__dirname}/build`,
     publicPath: process.env.CDN_URL,
   },
+
   devServer: { historyApiFallback: true },
   devtool: production ? undefined : 'cheap-module-eval-source-map',
   module: {
