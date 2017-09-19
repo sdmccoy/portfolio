@@ -5,6 +5,14 @@ import ContactForm from '../main/contact-form';
 import NavBody from '../main/navbody';
 import Footer from '../footer';
 
+// <div className='main'>
+// <ContactForm />
+// <NavBody />
+// </div>
+// <div className='footer'>
+// <Footer />
+// </div>
+// <Hero />
 class Dashboard extends React.Component {
   render(){
     return(
@@ -12,14 +20,6 @@ class Dashboard extends React.Component {
       this is test dash
         <div className='header'>
           <NavBar />
-          <Hero />
-        </div>
-        <div className='main'>
-          <ContactForm />
-          <NavBody />
-        </div>
-        <div className='footer'>
-          <Footer />
         </div>
       </div>
     );
