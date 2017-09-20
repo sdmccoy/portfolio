@@ -17,7 +17,6 @@ class Dashboard extends React.Component {
   render(){
     return(
       <div className='dashboard-container'>
-      this is test dash
         <div className='header'>
           <NavBar />
         </div>

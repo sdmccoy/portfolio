@@ -23,14 +23,17 @@ class NavBar extends React.Component {
         <i onClick={this.handleCompassClick} className='fa fa-compass' aria-hidden='true'></i>
         {util.renderIf(this.state.showNavMenu,
           <div className='navbar-menu'>
-            <Link to='/projects'>Projects</Link>
-            <Link to='/community'>Community</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <li><Link to='/projects'>Projects</Link></li>
+            <li><Link to='/community'>Community</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
           </div>)}
-        <i className='fa fa-linkedin-square' aria-hidden='true'></i>
-        <i className='fa fa-github-square' aria-hidden='true'></i>
-
+        <Link to='https://www.linkedin.com/in/sdmccoy/' target='_blank'>
+          <i className='fa fa-linkedin-square' aria-hidden='true'></i>
+        </Link>
+        <Link to='https://github.com/sdmccoy' target='_blank'>
+          <i className='fa fa-github-square' aria-hidden='true'></i>
+        </Link>
       </nav>
     );
   }
