@@ -6,9 +6,6 @@ import NavMain from '../main/navmain';
 import Footer from '../footer';
 
 // <ContactForm />
-// <div className='footer'>
-// <Footer />
-// </div>
 class Dashboard extends React.Component {
   render(){
     return(
@@ -19,6 +16,9 @@ class Dashboard extends React.Component {
         </div>
         <div className='main'>
           <NavMain />
+        </div>
+        <div className='footer'>
+          <Footer />
         </div>
       </div>
     );
