@@ -2,13 +2,10 @@ import React from 'react';
 import NavBar from '../header/navbar';
 import Hero from '../header/hero';
 import ContactForm from '../main/contact-form';
-import NavBody from '../main/navbody';
+import NavMain from '../main/navmain';
 import Footer from '../footer';
 
-// <div className='main'>
 // <ContactForm />
-// <NavBody />
-// </div>
 // <div className='footer'>
 // <Footer />
 // </div>
@@ -19,6 +16,9 @@ class Dashboard extends React.Component {
         <div className='header'>
           <NavBar />
           <Hero />
+        </div>
+        <div className='main'>
+          <NavMain />
         </div>
       </div>
     );
