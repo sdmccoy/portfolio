@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import * as util from '../../../lib/util.js';
+import './_navbar.scss';
 
 class NavBar extends React.Component {
   constructor(props){
@@ -21,22 +22,26 @@ class NavBar extends React.Component {
     return(
       <nav className='navbar'>
         <i onClick={this.handleCompassClick} className='fa fa-compass' aria-hidden='true'></i>
-        {util.renderIf(this.state.showNavMenu,
-          <div className='navbar-menu'>
-            <li><Link to='/projects'>Projects</Link></li>
-            <li><Link to='/community'>Community</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-          </div>)}
         <Link to='https://www.linkedin.com/in/sdmccoy/' target='_blank'>
           <i className='fa fa-linkedin-square' aria-hidden='true'></i>
         </Link>
         <Link to='https://github.com/sdmccoy' target='_blank'>
           <i className='fa fa-github-square' aria-hidden='true'></i>
         </Link>
+        <div className='navbar-menu'>
+          <Link to='/projects'>Projects</Link>
+          <div className='clear-float'></div>
+          <Link to='/community'>Community</Link>
+          <div className='clear-float'></div>
+          <Link to='/about'>About</Link>
+          <div className='clear-float'></div>
+          <Link to='/contact'>Contact</Link>
+        </div>
       </nav>
     );
   }
 }
 
 export default NavBar;
+
+// {util.renderIf(this.state.showNavMenu, )}
