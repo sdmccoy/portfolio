@@ -12,13 +12,13 @@ import Footer from '../footer';
 // <div className='footer'>
 // <Footer />
 // </div>
-// <Hero />
 class Dashboard extends React.Component {
   render(){
     return(
       <div className='dashboard-container'>
         <div className='header'>
           <NavBar />
+          <Hero />
         </div>
       </div>
     );
