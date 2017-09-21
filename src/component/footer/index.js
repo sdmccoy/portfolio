@@ -4,7 +4,7 @@ class Footer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      footerPhoto: '../../../style/assets/smallbrain.jpg',
+      footerPhoto: '../../../assets/smallbrain.jpg',
       footerSignature: 'Crafted by Scott McCoy',
     };
   }

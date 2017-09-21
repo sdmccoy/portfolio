@@ -7,7 +7,7 @@ class Hero extends React.Component {
     this.state = {
       name: 'Scott McCoy',
       title: 'Full-Stack Software Developer',
-      heroPhoto: '../../../../docs/assets/brain.jpg',
+      heroPhoto: '../../../../assets/brain.jpg',
       quote: '"positive impacts with logic-based creativity"',
     };
   }

@@ -56,7 +56,9 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'image/[name].[ext]',
+              name: '[name].[ext]',
+              publicPath: `${__dirname}/assets`,
+              outputPath: `${__dirname}/docs/assets`,
             },
           },
         ],
