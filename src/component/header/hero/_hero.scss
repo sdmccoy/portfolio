@@ -24,9 +24,13 @@ div.hero {
   h2.name, h4.title {
     text-align: center;
     height: 50%;
-    padding-top: $pad/2;
     color: $color-main;
     font-weight: bold;
+  }
+
+  h4.title {
+    padding-top: 4px;
+
   }
 
   img {

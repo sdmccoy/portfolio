@@ -28,20 +28,20 @@ class NavBar extends React.Component {
         <Link to='https://github.com/sdmccoy' target='_blank'>
           <i className='fa fa-github-square' aria-hidden='true'></i>
         </Link>
-        <div className='navbar-menu'>
-          <Link to='/projects'>Projects</Link>
-          <div className='clear-float'></div>
-          <Link to='/community'>Community</Link>
-          <div className='clear-float'></div>
-          <Link to='/about'>About</Link>
-          <div className='clear-float'></div>
-          <Link to='/contact'>Contact</Link>
-        </div>
+        {util.renderIf(this.state.showNavMenu,
+          <div className='navbar-menu'>
+            <Link to='/projects'>Projects</Link>
+            <div className='clear-float'></div>
+            <Link to='/community'>Community</Link>
+            <div className='clear-float'></div>
+            <Link to='/about'>About</Link>
+            <div className='clear-float'></div>
+            <Link to='/contact'>Contact</Link>
+          </div>
+        )}
       </nav>
     );
   }
 }
 
 export default NavBar;
-
-// {util.renderIf(this.state.showNavMenu, )}
