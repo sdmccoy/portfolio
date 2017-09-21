@@ -19,7 +19,7 @@ class Hero extends React.Component {
           <h4 className='title'>{this.state.title}</h4>
         </div>
         <img src={this.state.heroPhoto} />
-        <h2 className='quote'>{this.state.quote}</h2>
+        <h6 className='quote'>{this.state.quote}</h6>
       </div>
     );
   }

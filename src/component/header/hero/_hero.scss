@@ -30,9 +30,26 @@ div.hero {
   }
 
   img {
+    height: 90%;
+    margin-bottom: 10%;
     border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
     opacity: .8;
   }
 
+  .quote {
+    font-style: italic;
+    text-align: center;
+    border: 1px solid $color-grey;
+    height: auto;
+    width: calc(100%/3);
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    position: absolute;
+    z-index: 1;
+    background-color: $color-white;
+
+  }
 
 }
