@@ -35,7 +35,6 @@ module.exports = {
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/docs`,
-    publicPath: 'http://scottmccoy.codes',
   },
 
   devServer: { historyApiFallback: true },
