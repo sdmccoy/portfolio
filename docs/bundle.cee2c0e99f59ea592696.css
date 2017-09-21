@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
+  height: 5%;
+  float: left;
+  position: relative; }
+  nav.navbar * {
+    float: left;
+    display: block; }
+  nav.navbar .fa-compass, nav.navbar .fa-linkedin-square, nav.navbar .fa-github-square {
+    font-size: 3em;
+    display: block;
+    color: #385a74;
+    float: left; }
+    nav.navbar .fa-compass:hover, nav.navbar .fa-linkedin-square:hover, nav.navbar .fa-github-square:hover {
+      color: #8398a7; }
+    nav.navbar .fa-compass:active, nav.navbar .fa-linkedin-square:active, nav.navbar .fa-github-square:active {
+      color: #df745f; }
+  nav.navbar i.fa.fa-compass {
+    width: 50%; }
+  nav.navbar a {
+    width: 25%; }
+    nav.navbar a i.fa.fa-linkedin-square, nav.navbar a i.fa.fa-github-square {
+      text-align: right; }
+  nav.navbar .navbar-menu {
+    width: auto;
+    position: absolute;
+    z-index: 2;
+    top: 100%; }
+    nav.navbar .navbar-menu a {
+      width: 100%;
+      font-size: 1em;
+      margin: 0.25em 0;
+      border-radius: 0.25em;
+      padding: 0 0.5em;
+      background-color: #385a74;
+      border: 1px solid #8398a7;
+      color: #fff; }
+      nav.navbar .navbar-menu a:hover {
+        background-color: #c1dad7;
+        color: #385a74; }
+      nav.navbar .navbar-menu a:active {
+        background-color: #df745f; }
+div.hero {
+  height: 15%;
+  float: left;
+  position: relative; }
+  div.hero * {
+    float: left; }
+  div.hero .name-title {
+    height: 20%;
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(193, 218, 215, 0.9);
+    box-shadow: inset 0 0 0.5em #fff; }
+  div.hero h2.name, div.hero h4.title {
+    text-align: center;
+    height: 50%;
+    color: #385a74;
+    font-weight: bold; }
+  div.hero h4.title {
+    padding-top: 4px; }
+  div.hero img {
+    height: 100%;
+    border-top: 1px solid #7a7d84;
+    border-bottom: 1px solid #7a7d84;
+    opacity: .8; }
+  div.hero .quote {
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #7a7d84;
+    height: auto;
+    width: calc(100%/2);
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 0.25em; }
+.header {
+  height: 20%; }
+
+.main {
+  height: 70%; }
+
+.footer {
+  height: 10%; }
+* {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: normal;
+  background: none;
+  color: #000; }
+
+form *:focus {
+  border: none;
+  outline: none; }
+
+form *:active {
+  border: none;
+  outline: none; }
+
+head, script, link, style {
+  display: none; }
+
+p {
+  display: inline-block; }
+
+span, em, strong {
+  display: inline; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+body {
+  background: #fff;
+  font-size: 16px;
+  height: 100%; }
+
+blockquote {
+  border-left: 0.5em solid #e3e5e8;
+  padding-left: 0.5em; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.28571em; }
+
+h6 {
+  font-size: 1.125em; }
+
+label {
+  font-size: 1.25em;
+  font-weight: bolder;
+  margin-bottom: 0.5em; }
+
+textarea, input {
+  padding: 0.5em;
+  border: 1px solid #e3e5e8;
+  margin-bottom: 0.5em;
+  resize: none; }
+  textarea:focus, input:focus {
+    border: 1px solid #6e7177; }
+  textarea::placeholder, input::placeholder {
+    color: #e3e5e8; }
+
+button, input[type="submit"] {
+  background: #e3e5e8;
+  padding: 0.5em;
+  border: none; }
+  button:hover, input[type="submit"]:hover {
+    background: #7a7d84; }
+  button:active, input[type="submit"]:active {
+    background: #6e7177; }
+
+ul, ol, li {
+  margin-left: 1em; }
+
+li {
+  display: list-item; }
+
+ul li {
+  list-style: disc; }
+
+ol li {
+  list-style: decimal; }
+
+ol ol li, ul ol li {
+  list-style: lower-alpha; }
+
+ol ul li, ul ul li {
+  list-style: square; }
+
+.clear-float {
+  clear: both; }
