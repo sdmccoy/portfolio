@@ -1,4 +1,5 @@
 import React from 'react';
+import './_hero.scss';
 
 class Hero extends React.Component {
   constructor(props){
@@ -13,10 +14,12 @@ class Hero extends React.Component {
   render(){
     return(
       <div className='hero'>
-        <h2 className='name'>{this.state.name}</h2>
-        <h2 className='title'>{this.state.title}</h2>
+        <div className='name-title'>
+          <h2 className='name'>{this.state.name}</h2>
+          <h4 className='title'>{this.state.title}</h4>
+        </div>
         <img src={this.state.heroPhoto} />
-        <h2 className='quote'>{this.state.quote}</h2>
+        <h6 className='quote'>{this.state.quote}</h6>
       </div>
     );
   }

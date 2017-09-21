@@ -1,0 +1,66 @@
+@import "../../../style/_vars.scss";
+
+nav.navbar {
+  height: 5%;
+  float: left;
+  position: relative;
+
+  * {
+    float: left;
+    display: block;
+  }
+
+  .fa-compass, .fa-linkedin-square, .fa-github-square {
+    font-size: 3em;
+    display: block;
+    color: $color-main;
+    float: left;
+
+    &:hover {
+      color: $color-secondary;
+    }
+    &:active {
+      color: $color-active;
+    }
+  }
+
+  i.fa.fa-compass {
+    width: 50%;
+
+  }
+
+  a {
+    width: 25%;
+
+    i.fa.fa-linkedin-square, i.fa.fa-github-square {
+      text-align: right;
+    }
+  }
+
+
+  .navbar-menu {
+    width: auto;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+
+    a {
+      width: 100%;
+      font-size: 1em;
+      margin: $pad/2 0;
+      border-radius: $pad/2;
+      padding: 0 $pad;
+      background-color: $color-main;
+      border: 1px solid $color-secondary;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-main;
+      }
+      &:active {
+        background-color: $color-active;
+      }
+    }
+  }
+}

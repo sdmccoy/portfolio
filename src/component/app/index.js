@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import Dashboard from '../dashboard';
+import '../../style/_main.scss';
 
 class App extends React.Component {
 

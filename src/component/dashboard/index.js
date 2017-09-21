@@ -4,6 +4,7 @@ import Hero from '../header/hero';
 import ContactForm from '../main/contact-form';
 import NavMain from '../main/navmain';
 import Footer from '../footer';
+import './_dashboard.scss';
 
 // <ContactForm />
 class Dashboard extends React.Component {

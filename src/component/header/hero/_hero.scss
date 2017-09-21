@@ -1,0 +1,60 @@
+@import "../../../style/_vars.scss";
+
+div.hero {
+  height: 15%;
+  float: left;
+  position: relative;
+
+  * {
+    float: left;
+  }
+
+  .name-title {
+    height: 20%;
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    position: absolute;
+    z-index: 1;
+    background-color: rgba($color-tertiary, .9);
+    box-shadow: inset 0 0 $pad $color-white;
+  }
+
+  h2.name, h4.title {
+    text-align: center;
+    height: 50%;
+    color: $color-main;
+    font-weight: bold;
+  }
+
+  h4.title {
+    padding-top: 4px;
+
+  }
+
+  img {
+    height: 100%;
+    border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
+    opacity: .8;
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: $pad*2;
+    text-align: center;
+    border: 1px solid $color-grey;
+    height: auto;
+    width: calc(100%/2);
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 1;
+    background-color: $color-white;
+    border-radius: $pad/2;
+
+  }
+
+}

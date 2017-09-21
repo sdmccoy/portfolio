@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+//main colors
+$color-main: #385a74;
+$color-secondary: #8398a7;
+$color-tertiary: #c1dad7;
+$color-active: #df745f;
+$color-picture-background: #9D9D9F;
+
+//default colors
+$color-white: #fff;
+$color-black: #000;
+$color-lightgrey: #e3e5e8;
+$color-grey: #7a7d84;
+$color-darkgrey: #6e7177;
+
+//fonts
+$font-main: 'Lato';
+$fontface-sans-serif: sans-serif;
+$fontface-fantasy: fantasy;
+
+//form
+$color-button-add: #ddff99;
+$color-button-add-border: #ccff66;
+$color-button-update: #99ddff;
+$color-button-update-border: #66ccff;
+$color-category-container: #5bc0de;
+
+//error classes
+$error-close-box: #e0acac;
+$error-close-box-mouseover: #7c7e7f;
+$error-box-background: #f2dede;
+$error-box-border: #e8b3b0;
+$error-box-text: #a94442;
+
+//list items
+$not-completed-button-border: #b9bbbf;
+$completed-button-background: #a4f442;
+
+$pad: 0.5em;
