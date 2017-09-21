@@ -3,6 +3,8 @@
 nav.navbar {
   height: 5%;
   float: left;
+  position: relative;
+
   * {
     float: left;
     display: block;
@@ -38,6 +40,9 @@ nav.navbar {
 
   .navbar-menu {
     width: auto;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
 
     a {
       width: 100%;
