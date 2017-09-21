@@ -30,8 +30,7 @@ div.hero {
   }
 
   img {
-    height: 90%;
-    margin-bottom: 10%;
+    height: 100%;
     border-top: 1px solid $color-grey;
     border-bottom: 1px solid $color-grey;
     opacity: .8;
@@ -39,16 +38,18 @@ div.hero {
 
   .quote {
     font-style: italic;
+    font-size: $pad*2;
     text-align: center;
     border: 1px solid $color-grey;
     height: auto;
-    width: calc(100%/3);
-    bottom: 0%;
+    width: calc(100%/2);
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
-    position: absolute;
+    transform: translate(-50%, -50%);
+    position: relative;
     z-index: 1;
     background-color: $color-white;
+    border-radius: $pad/2;
 
   }
 
