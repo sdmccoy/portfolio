@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 //static page that express routes to. Webpack builds the new html in this dir
 app.use(express.static(`${__dirname}/docs`));
 

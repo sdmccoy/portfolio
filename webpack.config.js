@@ -35,7 +35,7 @@ module.exports = {
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/docs`,
-    publicPath: process.env.CDN_URL,
+    publicPath: '/',
   },
 
   devServer: { historyApiFallback: true },
