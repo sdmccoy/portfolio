@@ -1,10 +1,12 @@
 import React from 'react';
+import footPhoto from '../../../assets/smallbrain.jpg';
+
 
 class Footer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      footerPhoto: '../../../assets/smallbrain.jpg',
+      footerPhoto: footPhoto,
       footerSignature: 'Crafted by Scott McCoy',
     };
   }
