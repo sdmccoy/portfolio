@@ -1,0 +1,37 @@
+@import "../../style/_vars.scss";
+
+.footer-container {
+  height: 100%;
+  float: left;
+  * {
+    float: left;
+  }
+
+  .devicon-container {
+    height: 50%;
+    background-color: rgba($color-secondary, .8);
+
+    img {
+      width: calc(90%/10);
+      margin: 0 .5%;
+    }
+  }
+
+  .footer-bottom {
+    height: 50%;
+    background-color: rgba($color-secondary, 1);
+    text-align: center;
+
+    .footer-photo {
+      width: calc(100%/4);
+      float: none;
+      margin: $pad auto;
+      border-radius: $pad/2;
+    }
+
+    .footer-signature {
+      width: 100%;
+      font-style: italic;
+    }
+  }
+}

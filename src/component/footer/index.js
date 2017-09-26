@@ -1,4 +1,6 @@
 import React from 'react';
+import './_footer.scss';
+//assets
 import footerLogo from '../../../assets/smallbrain.jpg';
 import JSIcon from '../../../assets/devicons/javascript-original.svg';
 import nodeIcon from '../../../assets/devicons/nodejs-original-wordmark.svg';
@@ -23,7 +25,7 @@ class Footer extends React.Component {
   render(){
     return(
       <div className='footer-container'>
-        <div className='lang-icon-container'>
+        <div className='devicon-container'>
           <img src={JSIcon} />
           <img src={nodeIcon} />
           <img src={reactIcon} />
@@ -35,8 +37,10 @@ class Footer extends React.Component {
           <img src={mongoDBIcon} />
           <img src={webpackIcon} />
         </div>
-        <img className='footer-photo' src={this.state.footerLogo} />
-        <h2 className='footer-signature'>{this.state.footerSignature}</h2>
+        <div className='footer-bottom'>
+          <img className='footer-photo' src={this.state.footerLogo} />
+          <h6 className='footer-signature'>{this.state.footerSignature}</h6>
+        </div>
       </div>
     );
   }
