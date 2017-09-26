@@ -1,4 +1,5 @@
 import React from 'react';
+import heroPhoto from '../../../../assets/brain.jpg';
 import './_hero.scss';
 
 class Hero extends React.Component {
@@ -7,7 +8,7 @@ class Hero extends React.Component {
     this.state = {
       name: 'Scott McCoy',
       title: 'Full-Stack Software Developer',
-      heroPhoto: '../../../../assets/brain.jpg',
+      heroPhoto: heroPhoto,
       quote: '"positive impacts with logic-based creativity"',
     };
   }
