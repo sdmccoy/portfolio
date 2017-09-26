@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
   height: 5%;
   float: left;
   position: relative; }
@@ -81,6 +81,29 @@ div.hero {
     z-index: 1;
     background-color: #fff;
     border-radius: 0.25em; }
+.footer-container {
+  height: 100%;
+  float: left; }
+  .footer-container * {
+    float: left; }
+  .footer-container .devicon-container {
+    height: 50%;
+    background-color: rgba(131, 152, 167, 0.8); }
+    .footer-container .devicon-container img {
+      width: calc(90%/10);
+      margin: 0 .5%; }
+  .footer-container .footer-bottom {
+    height: 50%;
+    background-color: #8398a7;
+    text-align: center; }
+    .footer-container .footer-bottom .footer-photo {
+      width: calc(100%/4);
+      float: none;
+      margin: 0.5em auto;
+      border-radius: 0.25em; }
+    .footer-container .footer-bottom .footer-signature {
+      width: 100%;
+      font-style: italic; }
 .header {
   height: 20%; }
 
