@@ -20,10 +20,20 @@ let plugins = [
   }),
 ];
 
+//CleanPlugin folder to clean
+let pathsToClean = [
+  'docs',
+];
+
+//CleanPlugin omit cleaning cname file so gitpages reads the custom url
+let cleanOptions = {
+  exclude: ['CNAME.txt'],
+};
+
 // production plugins
 if(production){
   plugins = plugins.concat([
-    new CleanPlugin(),
+    new CleanPlugin(pathsToClean, cleanOptions),
     new UglifyPlugin(),
   ]);
 }
