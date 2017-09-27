@@ -1,5 +1,5 @@
 import React from 'react';
-import heroPhoto from '../../../../assets/brainlarge.jpg';
+import heroPhoto from '../../../../assets/brainsmall.png';
 import './_hero.scss';
 
 class Hero extends React.Component {
@@ -19,7 +19,9 @@ class Hero extends React.Component {
           <h2 className='name'>{this.state.name}</h2>
           <h4 className='title'>{this.state.title}</h4>
         </div>
-        <img src={this.state.heroPhoto} />
+        <div className='hero-photo'>
+          <img src={this.state.heroPhoto} />
+        </div>
         <h6 className='quote'>{this.state.quote}</h6>
       </div>
     );
