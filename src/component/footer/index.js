@@ -1,7 +1,7 @@
 import React from 'react';
 import './_footer.scss';
 //assets
-import footerLogo from '../../../assets/smallbrain.jpg';
+import footerLogo from '../../../assets/brainsmall.jpg';
 import JSIcon from '../../../assets/devicons/javascript-original.svg';
 import nodeIcon from '../../../assets/devicons/nodejs-original-wordmark.svg';
 import reactIcon from '../../../assets/devicons/react-original-wordmark.svg';
