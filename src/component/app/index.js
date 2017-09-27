@@ -7,6 +7,8 @@ import ContactForm from '../main/contact-form';
 import NavMain from '../main/navmain';
 import Footer from '../footer';
 import Projects from '../main/projects';
+import About from '../main/about';
+import Community from '../main/community';
 
 import '../../style/_main.scss';
 
@@ -23,6 +25,8 @@ class App extends React.Component {
           <div className='main'>
             <Route exact path='/' component={NavMain} />
             <Route exact path='/projects' component={Projects} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/community' component={Community} />
           </div>
           <div className='footer'>
             <Footer />
