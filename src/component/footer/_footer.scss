@@ -9,7 +9,7 @@
 
   .devicon-container {
     height: 50%;
-    background-color: rgba($color-secondary, .8);
+    background-color: rgba($color-secondary, .5);
 
     img {
       width: calc(90%/10);
@@ -19,7 +19,7 @@
 
   .footer-bottom {
     height: 50%;
-    background-color: rgba($color-secondary, 1);
+    background-color: rgba($color-secondary, .8);
     text-align: center;
 
     .footer-photo {
