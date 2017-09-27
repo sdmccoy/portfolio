@@ -1,5 +1,5 @@
 import React from 'react';
-import heroPhoto from '../../../../assets/brainlarge.png';
+import heroPhoto from '../../../../assets/brainsmall.png';
 import './_hero.scss';
 
 class Hero extends React.Component {

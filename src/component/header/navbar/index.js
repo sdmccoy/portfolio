@@ -30,6 +30,8 @@ class NavBar extends React.Component {
         </Link>
         {util.renderIf(this.state.showNavMenu,
           <div className='navbar-menu'>
+            <Link to='/'>Home</Link>
+            <div className='clear-float'></div>
             <Link to='/projects'>Projects</Link>
             <div className='clear-float'></div>
             <Link to='/community'>Community</Link>
