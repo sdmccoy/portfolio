@@ -1,5 +1,6 @@
 @import "../../../style/_vars.scss";
 
+
 nav.navbar {
   height: 5%;
   float: left;
@@ -9,12 +10,11 @@ nav.navbar {
     float: left;
     display: block;
   }
-
-  .fa-compass, .fa-linkedin-square, .fa-github-square {
+// all font icon styles
+  .fa-compass, .fa-home, .fa-linkedin-square, .fa-github-square {
     font-size: 3em;
     display: block;
     color: $color-main;
-    float: left;
 
     &:hover {
       color: $color-secondary;
@@ -23,31 +23,21 @@ nav.navbar {
       color: $color-active;
     }
   }
-
+//mobile first ham menu
   i.fa.fa-compass {
     width: 50%;
-
   }
-
-  a {
-    width: 25%;
-
-    i.fa.fa-linkedin-square, i.fa.fa-github-square {
-      text-align: right;
-    }
-  }
-
-
+//shows when compass (ham menu) is clicked
   .navbar-menu {
-    width: auto;
+    width: 100%;
     position: absolute;
     z-index: 2;
     top: 100%;
 
     a {
+      text-align: center;
       width: 100%;
-      font-size: 1em;
-      margin: $pad/2 0;
+      font-size: $pad*3;
       border-radius: $pad/2;
       padding: 0 $pad;
       background-color: $color-main;
@@ -62,5 +52,70 @@ nav.navbar {
         background-color: $color-active;
       }
     }
+  }
+  // linkedin and github icons for mobile first view w/ham menu
+  @media only screen and (max-width: 760px) {
+    a {
+      width: 25%;
+
+      i.fa.fa-linkedin-square, i.fa.fa-github-square {
+        text-align: right;
+      }
+
+    }
+  }
+
+//styles for desktop views
+  @media only screen and (min-width: 760px) {
+//hide ham menu drop down list when
+    .navbar-menu {
+      display: none;
+    }
+//style all links
+    a {
+      color: $color-main;
+      margin: 0 calc(10%/7/2);
+      text-align: center;
+
+    }
+
+//Nav links that are words
+    a.nav-words {
+      width: calc(60%/4);
+      font-size: 1.5em;
+      padding: $pad 0;
+      border-radius: $pad/2;
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-white;
+      }
+      &:active {
+        background-color: $color-active;
+      }
+    }
+//Nav links that are icons (overwrites the above style)
+    a.nav-icon {
+      width: calc(30%/3);
+      padding: $pad/2 0;
+    }
+  }
+
+// small adjustments for large screens
+}
+  @media only screen and (min-width: 1115px) {
+    a.nav-words {
+      font-size: 2em;
+      padding: $pad 0;
+      border-radius: $pad/2;
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-white;
+      }
+      &:active {
+        background-color: $color-active;
+      }
+    }
+    a.nav-icon {
+      padding: $pad/2 0;
   }
 }
