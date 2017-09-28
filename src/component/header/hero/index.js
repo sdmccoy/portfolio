@@ -9,7 +9,7 @@ class Hero extends React.Component {
       name: 'Scott McCoy',
       title: 'Full-Stack Software Developer',
       heroPhoto: heroPhoto,
-      quote: '"positive impacts with logic-based creativity"',
+      quote: 'Positive impacts with logic-based creativity',
     };
   }
   render(){
@@ -22,7 +22,13 @@ class Hero extends React.Component {
         <div className='hero-photo'>
           <img src={this.state.heroPhoto} />
         </div>
-        <h6 className='quote'>{this.state.quote}</h6>
+        <blockquote className='block-quote'>
+          <div className='left-quote'>
+          </div>
+          <p className='quote'>{this.state.quote}</p>
+          <div className='right-quote'>
+          </div>
+        </blockquote>
       </div>
     );
   }

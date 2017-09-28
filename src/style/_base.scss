@@ -14,7 +14,6 @@ body {
 
 blockquote {
   border-left: $pad solid $color-lightgrey;
-  padding-left: $pad;
 }
 
 @for $i from 1 through 6 {

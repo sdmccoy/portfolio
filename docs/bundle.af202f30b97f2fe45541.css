@@ -73,7 +73,7 @@ div.hero {
       max-width: 800px;
       margin: 0 auto;
       float: none; }
-  div.hero .quote {
+  div.hero .block-quote {
     font-style: italic;
     font-size: 1em;
     text-align: center;
@@ -87,6 +87,29 @@ div.hero {
     z-index: 1;
     background-color: #fff;
     border-radius: 0.25em; }
+    div.hero .block-quote .left-quote {
+      height: 100%;
+      width: 10%;
+      float: left;
+      font-size: 1.5em; }
+      div.hero .block-quote .left-quote:before {
+        top: 0;
+        left: 0;
+        content: "\201C"; }
+    div.hero .block-quote .quote {
+      height: 100%;
+      width: 80%;
+      padding: 0.25em 0;
+      font-style: italic; }
+    div.hero .block-quote .right-quote {
+      height: 100%;
+      width: 10%;
+      float: right;
+      font-size: 1.5em; }
+      div.hero .block-quote .right-quote:before {
+        top: 0;
+        right: 0;
+        content: "\201D"; }
 .navmain {
   height: 100%;
   float: left; }
@@ -179,8 +202,7 @@ body {
   height: 100%; }
 
 blockquote {
-  border-left: 0.5em solid #e3e5e8;
-  padding-left: 0.5em; }
+  border-left: 0.5em solid #e3e5e8; }
 
 h1 {
   font-size: 3em; }
