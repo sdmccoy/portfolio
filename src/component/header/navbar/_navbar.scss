@@ -1,5 +1,6 @@
 @import "../../../style/_vars.scss";
 
+
 nav.navbar {
   height: 5%;
   float: left;
@@ -62,5 +63,12 @@ nav.navbar {
         background-color: $color-active;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  i.fa.fa-compass {
+    color: yellow;
+    // display: none;
   }
 }
