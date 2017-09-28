@@ -23,21 +23,27 @@ class NavBar extends React.Component {
     return(
       <nav className='navbar'>
         <MediaQuery minWidth={760}>
-          <Link to='/'><i className="fa fa-home" aria-hidden="true"></i></Link>
-          <Link to='/projects'>Projects</Link>
-          <Link to='/community'>Community</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/' className='nav-icon'><i className="fa fa-home" aria-hidden="true"></i></Link>
+          <Link to='/projects' className='nav-words'>Projects</Link>
+          <Link to='/community' className='nav-words'>Community</Link>
+          <Link to='/about' className='nav-words'>About</Link>
+          <Link to='/contact' className='nav-words'>Contact</Link>
+          <Link to='https://www.linkedin.com/in/sdmccoy/' className='nav-icon' target='_blank'>
+            <i className='fa fa-linkedin-square' aria-hidden='true'></i>
+          </Link>
+          <Link to='https://github.com/sdmccoy' className='nav-icon' target='_blank'>
+            <i className='fa fa-github-square' aria-hidden='true'></i>
+          </Link>
         </MediaQuery>
         <MediaQuery maxWidth={759}>
           <i onClick={this.handleCompassClick} className='fa fa-compass' aria-hidden='true'></i>
+          <Link to='https://www.linkedin.com/in/sdmccoy/' className='nav-icon' target='_blank'>
+            <i className='fa fa-linkedin-square' aria-hidden='true'></i>
+          </Link>
+          <Link to='https://github.com/sdmccoy' className='nav-icon' target='_blank'>
+            <i className='fa fa-github-square' aria-hidden='true'></i>
+          </Link>
         </MediaQuery>
-        <Link to='https://www.linkedin.com/in/sdmccoy/' target='_blank'>
-          <i className='fa fa-linkedin-square' aria-hidden='true'></i>
-        </Link>
-        <Link to='https://github.com/sdmccoy' target='_blank'>
-          <i className='fa fa-github-square' aria-hidden='true'></i>
-        </Link>
         {util.renderIf(this.state.showHamburgerMenu,
           <div className='navbar-menu'>
             <Link to='/'>Home</Link>

@@ -10,12 +10,11 @@ nav.navbar {
     float: left;
     display: block;
   }
-
-  .fa-compass, .fa-linkedin-square, .fa-github-square {
+// all font icon styles
+  .fa-compass, .fa-home, .fa-linkedin-square, .fa-github-square {
     font-size: 3em;
     display: block;
     color: $color-main;
-    float: left;
 
     &:hover {
       color: $color-secondary;
@@ -24,21 +23,11 @@ nav.navbar {
       color: $color-active;
     }
   }
-
+//mobile first ham menu
   i.fa.fa-compass {
     width: 50%;
-
   }
-
-  a {
-    width: 25%;
-
-    i.fa.fa-linkedin-square, i.fa.fa-github-square {
-      text-align: right;
-    }
-  }
-
-
+//shows when compass (ham menu) is clicked
   .navbar-menu {
     width: 100%;
     position: absolute;
@@ -64,11 +53,45 @@ nav.navbar {
       }
     }
   }
-}
+  // linkedin and github icons for mobile first view w/ham menu
+  @media only screen and (max-width: 760px) {
+    a {
+      width: 25%;
 
-@media only screen and (min-width: 760px) {
-  i.fa.fa-compass {
-    color: yellow;
-    // display: none;
+      i.fa.fa-linkedin-square, i.fa.fa-github-square {
+        text-align: right;
+      }
+    }
+  }
+
+//styles for desktop views
+  @media only screen and (min-width: 760px) {
+
+//style all links
+    a {
+      color: $color-main;
+      margin: 0 calc(10%/7/2);
+      text-align: center;
+
+    }
+
+//Nav links that are words
+    a.nav-words {
+      width: calc(60%/4);
+      font-size: 1.5em;
+      padding: $pad 0 0 0;
+    }
+//Nav links that are icons (overwrites the above style)
+    a.nav-icon {
+      width: calc(30%/3);
+    }
+  }
+
+// small adjustments for large screens
+  @media only screen and (min-width: 1115px) {
+    a.nav-words {
+      font-size: 2em;
+      padding: .2em 0 0 0;
+    }
   }
 }
