@@ -61,12 +61,16 @@ nav.navbar {
       i.fa.fa-linkedin-square, i.fa.fa-github-square {
         text-align: right;
       }
+
     }
   }
 
 //styles for desktop views
   @media only screen and (min-width: 760px) {
-
+//hide ham menu drop down list when
+    .navbar-menu {
+      display: none;
+    }
 //style all links
     a {
       color: $color-main;
@@ -79,19 +83,39 @@ nav.navbar {
     a.nav-words {
       width: calc(60%/4);
       font-size: 1.5em;
-      padding: $pad 0 0 0;
+      padding: $pad 0;
+      border-radius: $pad/2;
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-white;
+      }
+      &:active {
+        background-color: $color-active;
+      }
     }
 //Nav links that are icons (overwrites the above style)
     a.nav-icon {
       width: calc(30%/3);
+      padding: $pad/2 0;
     }
   }
 
 // small adjustments for large screens
+}
   @media only screen and (min-width: 1115px) {
     a.nav-words {
       font-size: 2em;
-      padding: .2em 0 0 0;
+      padding: $pad 0;
+      border-radius: $pad/2;
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-white;
+      }
+      &:active {
+        background-color: $color-active;
+      }
     }
+    a.nav-icon {
+      padding: $pad/2 0;
   }
 }

@@ -5,30 +5,25 @@
   nav.navbar * {
     float: left;
     display: block; }
-  nav.navbar .fa-compass, nav.navbar .fa-linkedin-square, nav.navbar .fa-github-square {
+  nav.navbar .fa-compass, nav.navbar .fa-home, nav.navbar .fa-linkedin-square, nav.navbar .fa-github-square {
     font-size: 3em;
     display: block;
-    color: #385a74;
-    float: left; }
-    nav.navbar .fa-compass:hover, nav.navbar .fa-linkedin-square:hover, nav.navbar .fa-github-square:hover {
+    color: #385a74; }
+    nav.navbar .fa-compass:hover, nav.navbar .fa-home:hover, nav.navbar .fa-linkedin-square:hover, nav.navbar .fa-github-square:hover {
       color: #8398a7; }
-    nav.navbar .fa-compass:active, nav.navbar .fa-linkedin-square:active, nav.navbar .fa-github-square:active {
+    nav.navbar .fa-compass:active, nav.navbar .fa-home:active, nav.navbar .fa-linkedin-square:active, nav.navbar .fa-github-square:active {
       color: #df745f; }
   nav.navbar i.fa.fa-compass {
     width: 50%; }
-  nav.navbar a {
-    width: 25%; }
-    nav.navbar a i.fa.fa-linkedin-square, nav.navbar a i.fa.fa-github-square {
-      text-align: right; }
   nav.navbar .navbar-menu {
-    width: auto;
+    width: 100%;
     position: absolute;
     z-index: 2;
     top: 100%; }
     nav.navbar .navbar-menu a {
+      text-align: center;
       width: 100%;
-      font-size: 1em;
-      margin: 0.25em 0;
+      font-size: 1.5em;
       border-radius: 0.25em;
       padding: 0 0.5em;
       background-color: #385a74;
@@ -39,6 +34,44 @@
         color: #385a74; }
       nav.navbar .navbar-menu a:active {
         background-color: #df745f; }
+  @media only screen and (max-width: 760px) {
+    nav.navbar a {
+      width: 25%; }
+      nav.navbar a i.fa.fa-linkedin-square, nav.navbar a i.fa.fa-github-square {
+        text-align: right; } }
+  @media only screen and (min-width: 760px) {
+    nav.navbar .navbar-menu {
+      display: none; }
+    nav.navbar a {
+      color: #385a74;
+      margin: 0 calc(10%/7/2);
+      text-align: center; }
+    nav.navbar a.nav-words {
+      width: calc(60%/4);
+      font-size: 1.5em;
+      padding: 0.5em 0;
+      border-radius: 0.25em; }
+      nav.navbar a.nav-words:hover {
+        background-color: #c1dad7;
+        color: #fff; }
+      nav.navbar a.nav-words:active {
+        background-color: #df745f; }
+    nav.navbar a.nav-icon {
+      width: calc(30%/3);
+      padding: 0.25em 0; } }
+
+@media only screen and (min-width: 1115px) {
+  a.nav-words {
+    font-size: 2em;
+    padding: 0.5em 0;
+    border-radius: 0.25em; }
+    a.nav-words:hover {
+      background-color: #c1dad7;
+      color: #fff; }
+    a.nav-words:active {
+      background-color: #df745f; }
+  a.nav-icon {
+    padding: 0.25em 0; } }
 div.hero {
   height: 15%;
   float: left;
@@ -52,15 +85,25 @@ div.hero {
     z-index: 1;
     background-color: rgba(193, 218, 215, 0.7);
     box-shadow: inset 0 -2px 0.5em #fff; }
+  @media only screen and (min-width: 540px) {
+    div.hero h2.name {
+      font-size: 2.75em; }
+    div.hero h4.title {
+      font-size: 2em; } }
+  @media only screen and (min-width: 760px) {
+    div.hero h2.name {
+      font-size: 3.25em; }
+    div.hero h4.title {
+      font-size: 2.5em; } }
   div.hero h2.name, div.hero h4.title {
     text-align: center;
     height: 50%;
     color: #fff;
     font-weight: bold;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: .2em; }
   div.hero h4.title {
-    padding-top: 4px;
-    padding-bottom: 6px; }
+    padding-bottom: .15em; }
   div.hero .hero-photo {
     margin: 0 auto;
     height: 100%;
@@ -110,6 +153,12 @@ div.hero {
         top: 0;
         right: 0;
         content: "\201D"; }
+  @media only screen and (min-width: 540px) {
+    div.hero .block-quote {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 760px) {
+    div.hero .block-quote {
+      font-size: 1.75em; } }
 .navmain {
   height: 100%;
   float: left; }
