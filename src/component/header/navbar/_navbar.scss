@@ -39,15 +39,15 @@ nav.navbar {
 
 
   .navbar-menu {
-    width: auto;
+    width: 100%;
     position: absolute;
     z-index: 2;
     top: 100%;
 
     a {
+      text-align: center;
       width: 100%;
-      font-size: 1em;
-      margin: $pad/2 0;
+      font-size: $pad*3;
       border-radius: $pad/2;
       padding: 0 $pad;
       background-color: $color-main;
