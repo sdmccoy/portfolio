@@ -1,18 +1,8 @@
 import React from 'react';
 import * as util from '../../../lib/util.js';
-
+import * as devIcon from '../../../lib/dev-icons.js';
 //remove after creating object and icon vars
 import sparkleMonkeyPhoto from '../../../../assets/project-photo-sparklemonkey-medium.png';
-import JSIcon from '../../../../assets/devicons/javascript-original.svg';
-import nodeIcon from '../../../../assets/devicons/nodejs-original-wordmark.svg';
-import reactIcon from '../../../../assets/devicons/react-original-wordmark.svg';
-import jQueryIcon from '../../../../assets/devicons/jquery-original-wordmark.svg';
-import HTML5Icon from '../../../../assets/devicons/html5-original-wordmark.svg';
-import CSS3Icon from '../../../../assets/devicons/css3-original-wordmark.svg';
-import sassIcon from '../../../../assets/devicons/sass-original.svg';
-import postgreSQLIcon from '../../../../assets/devicons/postgresql-original-wordmark.svg';
-import mongoDBIcon from '../../../../assets/devicons/mongodb-original-wordmark.svg';
-import webpackIcon from '../../../../assets/devicons/webpack-original-wordmark.svg';
 
 class Projects extends React.Component {
   constructor(props){
@@ -23,11 +13,16 @@ class Projects extends React.Component {
     this.handleProjectDetails = this.handleProjectDetails.bind(this);
   }
 
-  handleProjectDetails(){
 
+  handleProjectDetails(){
+    this.state.showProjectDetails === false ?
+      this.setState({showProjectDetails: true}) : undefined;
+    this.state.showProjectDetails === true ?
+      this.setState({showProjectDetails: false}) : undefined;
   }
   //build static structure to style, then make object module loop through
   render(){
+
     return(
       <div className='projects'>
         <h2 className='projects-headline'>
@@ -58,18 +53,15 @@ class Projects extends React.Component {
               <li>feature two</li>
               <li>feature three</li>
             </ul>
-            <i className="fa fa-times-circle" aria-hidden="true"></i>
+            <i onClick={this.handleProjectDetails}
+              className="fa fa-times-circle" aria-hidden="true" >
+            </i>
             <div className='devicon-container'>
-              <img src={JSIcon} />
-              <img src={nodeIcon} />
-              <img src={reactIcon} />
-              <img src={jQueryIcon} />
-              <img src={HTML5Icon} />
-              <img src={CSS3Icon} />
-              <img src={sassIcon} />
-              <img src={postgreSQLIcon} />
-              <img src={mongoDBIcon} />
-              <img src={webpackIcon} />
+              <img src={devIcon.JSIcon} />
+              <img src={devIcon.nodeIcon} />
+              <img src={devIcon.jQueryIcon} />
+              <img src={devIcon.HTML5Icon} />
+              <img src={devIcon.CSS3Icon} />
             </div>
           </div>
         )}
