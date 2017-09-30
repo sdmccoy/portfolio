@@ -2,16 +2,7 @@ import React from 'react';
 import './_footer.scss';
 //assets
 import footerLogo from '../../../assets/brainsmall.png';
-import JSIcon from '../../../assets/devicons/javascript-original.svg';
-import nodeIcon from '../../../assets/devicons/nodejs-original-wordmark.svg';
-import reactIcon from '../../../assets/devicons/react-original-wordmark.svg';
-import jQueryIcon from '../../../assets/devicons/jquery-original-wordmark.svg';
-import HTML5Icon from '../../../assets/devicons/html5-original-wordmark.svg';
-import CSS3Icon from '../../../assets/devicons/css3-original-wordmark.svg';
-import sassIcon from '../../../assets/devicons/sass-original.svg';
-import postgreSQLIcon from '../../../assets/devicons/postgresql-original-wordmark.svg';
-import mongoDBIcon from '../../../assets/devicons/mongodb-original-wordmark.svg';
-import webpackIcon from '../../../assets/devicons/webpack-original-wordmark.svg';
+import * as devIcon from '../../lib/dev-icons.js';
 
 class Footer extends React.Component {
   constructor(props){
@@ -26,16 +17,16 @@ class Footer extends React.Component {
     return(
       <div className='footer-container'>
         <div className='devicon-container'>
-          <img src={JSIcon} />
-          <img src={nodeIcon} />
-          <img src={reactIcon} />
-          <img src={jQueryIcon} />
-          <img src={HTML5Icon} />
-          <img src={CSS3Icon} />
-          <img src={sassIcon} />
-          <img src={postgreSQLIcon} />
-          <img src={mongoDBIcon} />
-          <img src={webpackIcon} />
+          <img src={devIcon.JSIcon} />
+          <img src={devIcon.nodeIcon} />
+          <img src={devIcon.reactIcon} />
+          <img src={devIcon.jQueryIcon} />
+          <img src={devIcon.HTML5Icon} />
+          <img src={devIcon.CSS3Icon} />
+          <img src={devIcon.sassIcon} />
+          <img src={devIcon.postgreSQLIcon} />
+          <img src={devIcon.mongoDBIcon} />
+          <img src={devIcon.webpackIcon} />
         </div>
         <div className='footer-bottom'>
           <img className='footer-photo' src={this.state.footerLogo} />
