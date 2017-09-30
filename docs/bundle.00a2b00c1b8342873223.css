@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
   height: 5%;
   float: left;
   position: relative; }
@@ -205,6 +205,55 @@ div.hero {
     .footer-container .footer-bottom .footer-signature {
       width: 100%;
       font-style: italic; }
+.projects {
+  height: 100%;
+  float: left; }
+  .projects * {
+    float: left;
+    display: block; }
+  .projects .headline {
+    text-align: left;
+    font-size: 3em;
+    font-weight: 600;
+    color: #385a74;
+    background-color: rgba(193, 218, 215, 0.7);
+    box-shadow: inset -6px -4px 0.5em #fff; }
+  .projects .device-photo {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    margin: 1em 0; }
+  .projects .snapshot .title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #c1dad7;
+    background-color: rgba(56, 90, 116, 0.8);
+    box-shadow: inset 0px 0px 0.15em #fff;
+    padding: 0 0.25em; }
+  .projects .snapshot .brief, .projects .snapshot p {
+    margin: 0.25em 0 0 0;
+    padding: 0 0.25em; }
+  .projects .snapshot .brief {
+    font-size: 1.5em;
+    font-style: italic; }
+  .projects .snapshot p {
+    font-size: 1.25em; }
+  .projects .button-bar .visit-site-button, .projects .button-bar .details-button {
+    border-radius: .5em;
+    background-color: #385a74;
+    margin: 0.25em 0;
+    border: 1px solid #7a7d84; }
+    .projects .button-bar .visit-site-button:hover, .projects .button-bar .details-button:hover {
+      background-color: #c1dad7; }
+      .projects .button-bar .visit-site-button:hover h6, .projects .button-bar .visit-site-button:hover i.fa.fa-arrow-circle-right, .projects .button-bar .visit-site-button:hover i.fa.fa-chevron-circle-down, .projects .button-bar .details-button:hover h6, .projects .button-bar .details-button:hover i.fa.fa-arrow-circle-right, .projects .button-bar .details-button:hover i.fa.fa-chevron-circle-down {
+        color: #385a74; }
+    .projects .button-bar .visit-site-button h6, .projects .button-bar .details-button h6 {
+      width: 80%;
+      color: #fff; }
+    .projects .button-bar .visit-site-button i.fa.fa-arrow-circle-right, .projects .button-bar .visit-site-button i.fa.fa-chevron-circle-down, .projects .button-bar .details-button i.fa.fa-arrow-circle-right, .projects .button-bar .details-button i.fa.fa-chevron-circle-down {
+      font-size: 1.125;
+      width: 20%;
+      color: #fff; }
 * {
   display: block;
   margin: 0;

@@ -49,4 +49,33 @@
       font-size: 1.25em;
     }
   }
+
+  .button-bar {
+
+    .visit-site-button, .details-button {
+      border-radius: .5em;
+      background-color: $color-main;
+      margin: $pad/2 0;
+      border: 1px solid $color-grey;
+
+
+      &:hover {
+        background-color: $color-tertiary;
+        h6, i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
+          color: $color-main;
+        }
+      }
+
+      h6 {
+        width: 80%;
+        color: $color-white;
+      }
+
+      i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
+        font-size: 1.125;
+        width: 20%;
+        color: $color-white;
+      }
+    }
+  }
 }

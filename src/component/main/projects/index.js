@@ -38,11 +38,11 @@ class Projects extends React.Component {
           <p>Spicy jalapeno bacon ipsum dolor amet shankle chuck filet mignon drumstick ground round chicken pig pork tail cow salami porchetta boudin prosciutto jowl. Sausage ham hock tongue ribeye, turducken rump pancetta hamburger alcatra pork chop salami. Meatball boudin biltong ground round frankfurter landjaeger pig. Chicken pork loin chuck, boudin salami beef ribs short ribs venison brisket pork chop ham. Tail capicola tri-tip pork pork chop, pork belly alcatra tongue ground round kielbasa fatback shank bacon kevin. Shankle pastrami tri-tip corned beef pork loin pork belly doner leberkas prosciutto capicola cow jerky.</p>
         </div>
         <div className='button-bar'>
-          <button>
+          <button className='visit-site-button'>
             <h6>Visit Site</h6>
             <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
           </button>
-          <button onClick={this.handleProjectDetails}>
+          <button className='details-button' onClick={this.handleProjectDetails}>
             <h6>Details</h6>
             <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
           </button>
