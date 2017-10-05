@@ -12,9 +12,6 @@ body {
   height: 100%;
 }
 
-blockquote {
-  border-left: $pad solid $color-lightgrey;
-}
 
 @for $i from 1 through 6 {
   h#{$i} {

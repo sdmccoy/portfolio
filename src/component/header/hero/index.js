@@ -15,20 +15,24 @@ class Hero extends React.Component {
   render(){
     return(
       <div className='hero'>
-        <div className='name-title'>
+        <div className='hero-top'>
           <h2 className='name'>{this.state.name}</h2>
           <h4 className='title'>{this.state.title}</h4>
         </div>
-        <div className='hero-photo'>
-          <img src={this.state.heroPhoto} />
+        <div className='hero-bottom-container'>
+          <div className='hero-photo'>
+            <img src={this.state.heroPhoto} />
+          </div>
+          <div className='blockquote-container'>
+            <blockquote className='blockquote'>
+              <div className='left-quote'>
+              </div>
+              <p className='quote'>{this.state.quote}</p>
+              <div className='right-quote'>
+              </div>
+            </blockquote>
+          </div>
         </div>
-        <blockquote className='block-quote'>
-          <div className='left-quote'>
-          </div>
-          <p className='quote'>{this.state.quote}</p>
-          <div className='right-quote'>
-          </div>
-        </blockquote>
       </div>
     );
   }
