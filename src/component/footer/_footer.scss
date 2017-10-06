@@ -3,36 +3,30 @@
 .footer-container {
   height: 100%;
   float: left;
+  background-color: $color-secondary;
   * {
     float: left;
   }
 
   .devicon-container {
-    height: 50%;
-    background-color: rgba($color-secondary, .5);
+    height: 80%;
+    background-color: $color-white;
+    border-top: 1px solid $color-grey;
 
     img {
-      width: calc(90%/10);
-      margin: 0 .5%;
+      height: calc(96%/1);
+      width: calc(80%/10);
+      margin: calc(4%/2) calc(20%/20);
     }
   }
 
   .footer-bottom {
-    height: 50%;
-    background-color: rgba($color-secondary, .8);
+    height: 20%;
     text-align: center;
-
-    .footer-photo {
-      width: calc(100%/4);
-      float: none;
-      margin: $pad auto;
-      border-radius: $pad/2;
-      background-color: transparent;
-    }
 
     .footer-signature {
       width: 100%;
-      font-style: italic;
+      font-family: $font-cursive;
     }
   }
 }

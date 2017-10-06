@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Lato);nav.navbar {
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);nav.navbar {
   height: 5%;
   float: left;
   position: relative; }
@@ -75,20 +75,18 @@
 div.hero {
   height: 15%;
   float: left;
-  position: relative; }
+  background-color: #385a74; }
   div.hero * {
     float: left; }
-  div.hero .name-title {
-    height: auto;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(193, 218, 215, 0.7);
-    box-shadow: inset 0 -2px 0.5em #fff; }
+  div.hero .hero-top {
+    height: 60%;
+    width: 100%; }
   @media only screen and (min-width: 540px) {
     div.hero h2.name {
-      font-size: 2.75em; }
+      font-size: 2.75em;
+      letter-spacing: 2px; }
     div.hero h4.title {
+      letter-spacing: 2px;
       font-size: 2em; } }
   @media only screen and (min-width: 760px) {
     div.hero h2.name {
@@ -104,107 +102,162 @@ div.hero {
     padding-top: .2em; }
   div.hero h4.title {
     padding-bottom: .15em; }
+  div.hero .hero-bottom-container {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center; }
   div.hero .hero-photo {
-    margin: 0 auto;
-    height: 100%;
-    max-height: 800px;
-    border-top: 1px solid #7a7d84;
-    border-bottom: 1px solid #7a7d84;
-    background-color: rgba(56, 90, 116, 0.8); }
+    margin: 0 2%;
+    height: 40%;
+    width: calc(46%);
+    max-height: 800px; }
     div.hero .hero-photo img {
       height: 100%;
       max-width: 800px;
       margin: 0 auto;
       float: none; }
-  div.hero .block-quote {
-    font-style: italic;
-    font-size: 1em;
-    text-align: center;
-    border: 1px solid #7a7d84;
-    height: auto;
-    width: calc(100%/2);
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-    border-radius: 0.25em; }
-    div.hero .block-quote .left-quote {
+  div.hero .blockquote-container {
+    width: 46%;
+    margin: 0 2%; }
+    div.hero .blockquote-container blockquote {
+      width: 80%;
+      height: 80%;
+      margin: 10%;
+      background-color: #fff;
+      border-radius: 0.5em; }
+    div.hero .blockquote-container .left-quote {
       height: 100%;
       width: 10%;
       float: left;
       font-size: 1.5em; }
-      div.hero .block-quote .left-quote:before {
+      div.hero .blockquote-container .left-quote:before {
         top: 0;
         left: 0;
         content: "\201C"; }
-    div.hero .block-quote .quote {
+    div.hero .blockquote-container .quote {
       height: 100%;
       width: 80%;
       padding: 0.25em 0;
-      font-style: italic; }
-    div.hero .block-quote .right-quote {
+      font-style: italic;
+      font-family: "Satisfy", cursive; }
+    div.hero .blockquote-container .right-quote {
       height: 100%;
       width: 10%;
       float: right;
       font-size: 1.5em; }
-      div.hero .block-quote .right-quote:before {
+      div.hero .blockquote-container .right-quote:before {
         top: 0;
         right: 0;
         content: "\201D"; }
   @media only screen and (min-width: 540px) {
-    div.hero .block-quote {
+    div.hero .blockquote {
       font-size: 1.5em; } }
   @media only screen and (min-width: 760px) {
-    div.hero .block-quote {
+    div.hero .blockquote {
       font-size: 1.75em; } }
+  @media only screen and (min-width: 960px) {
+    div.hero .blockquote {
+      font-size: 2em; } }
 .navmain {
-  height: 100%;
-  float: left; }
+  height: 70%;
+  text-align: center; }
   .navmain * {
     float: left; }
-  .navmain a {
-    width: 330px;
-    height: 330px;
-    margin: 0.5em;
+  .navmain i.fa {
+    font-size: 4em;
+    display: block;
     text-align: center;
-    border-radius: 50%;
-    background: #385a74;
-    position: relative;
-    box-shadow: inset 0 0 2.5em #c1dad7; }
+    color: #385a74; }
+  .navmain i.fa.fa-user-circle:before {
+    font-size: .95em; }
+  .navmain a {
+    font-size: 2em;
+    width: calc(96%/1);
+    margin: 2% calc(2%/1);
+    border: 1px solid #385a74; }
     .navmain a:hover {
-      background: #8398a7;
-      color: #385a74; }
-    .navmain a p {
+      margin: 2% 0;
+      transform: scale(1.05);
+      box-shadow: 5px 5px 5px #8398a7; }
+      .navmain a:hover i.fa {
+        color: #df745f; }
+  .navmain h4 {
+    color: #fff;
+    background-color: #385a74; }
+  @media only screen and (min-width: 560px) {
+    .navmain i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center; }
+    .navmain a.projects-nav {
+      width: calc(96%/1);
+      margin: 2% calc(2%/1); }
+    .navmain a.community-nav {
       font-size: 2em;
-      transform: translate(0, 140px);
-      font-weight: 600;
-      color: #fff; }
+      width: calc(94%/3*2);
+      margin: 2% calc(2%/2) 2% calc(2%/1); }
+    .navmain a.about-nav {
+      font-size: 2em;
+      width: calc(94%/3);
+      margin: 2% calc(2%/1) 2% calc(2%/2); } }
+  @media only screen and (min-width: 760px) {
+    .navmain i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center; }
+    .navmain h4 {
+      font-size: 1.2em; }
+    .navmain a.projects-nav {
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2); }
+    .navmain a.community-nav {
+      font-size: 2em;
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2); }
+    .navmain a.about-nav {
+      font-size: 2em;
+      width: calc(94%/5*1);
+      margin: 2% calc(calc(6%/3) /2); } }
+  @media only screen and (min-width: 960px) {
+    .navmain i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center; }
+    .navmain h4 {
+      font-size: 1.5em; }
+    .navmain a.projects-nav {
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2); }
+    .navmain a.community-nav {
+      font-size: 2em;
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2); }
+    .navmain a.about-nav {
+      font-size: 2em;
+      width: calc(94%/5*1);
+      margin: 2% calc(calc(6%/3) /2); } }
 .footer-container {
   height: 100%;
-  float: left; }
+  float: left;
+  background-color: #8398a7; }
   .footer-container * {
     float: left; }
   .footer-container .devicon-container {
-    height: 50%;
-    background-color: rgba(131, 152, 167, 0.5); }
+    height: 80%;
+    background-color: #fff;
+    border-top: 1px solid #7a7d84; }
     .footer-container .devicon-container img {
-      width: calc(90%/10);
-      margin: 0 .5%; }
+      height: calc(96%/1);
+      width: calc(80%/10);
+      margin: calc(4%/2) calc(20%/20); }
   .footer-container .footer-bottom {
-    height: 50%;
-    background-color: rgba(131, 152, 167, 0.8);
+    height: 20%;
     text-align: center; }
-    .footer-container .footer-bottom .footer-photo {
-      width: calc(100%/4);
-      float: none;
-      margin: 0.5em auto;
-      border-radius: 0.25em;
-      background-color: transparent; }
     .footer-container .footer-bottom .footer-signature {
       width: 100%;
-      font-style: italic; }
+      font-family: "Satisfy", cursive; }
 .projects {
   height: 100%;
   float: left; }
@@ -299,9 +352,6 @@ body {
   font-size: 16px;
   height: 100%; }
 
-blockquote {
-  border-left: 0.5em solid #e3e5e8; }
-
 h1 {
   font-size: 3em; }
 
@@ -363,4 +413,16 @@ ol ul li, ul ul li {
   list-style: square; }
 
 .clear-float {
+  clear: both; }
+
+.app {
+  height: 100%; }
+  .app .header {
+    height: 20%; }
+  .app .main {
+    height: 70%; }
+  .app .footer {
+    height: 10%; }
+
+.header, .main, .footer {
   clear: both; }

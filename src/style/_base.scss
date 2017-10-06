@@ -12,9 +12,6 @@ body {
   height: 100%;
 }
 
-blockquote {
-  border-left: $pad solid $color-lightgrey;
-}
 
 @for $i from 1 through 6 {
   h#{$i} {
@@ -66,5 +63,22 @@ ol ol li , ul ol li { list-style: lower-alpha; }
 ol ul li , ul ul li { list-style: square; }
 
 .clear-float {
+  clear: both;
+}
+
+.app {
+  height: 100%;
+  .header {
+    height: 20%;
+  }
+  .main {
+    height: 70%;
+  }
+  .footer {
+    height: 10%;
+  }
+}
+
+.header, .main, .footer {
   clear: both;
 }

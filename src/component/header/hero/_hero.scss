@@ -3,28 +3,27 @@
 div.hero {
   height: 15%;
   float: left;
-  position: relative;
-
+  background-color: rgba($color-main, 1);
   * {
     float: left;
   }
 
-  .name-title {
-    height: auto;
+  .hero-top {
+    height: 60%;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: rgba($color-tertiary, .7);
-    box-shadow: inset 0 -2px $pad $color-white;
   }
+
   @media only screen and (min-width: 540px) {
     h2.name {
       font-size: 2.75em;
+      letter-spacing: 2px;
     }
     h4.title {
+      letter-spacing: 2px;
       font-size: 2em;
     }
   }
+
   @media only screen and (min-width: 760px) {
     h2.name {
       font-size: 3.25em;
@@ -33,6 +32,7 @@ div.hero {
       font-size: 2.5em;
     }
   }
+
   h2.name, h4.title {
     text-align: center;
     height: 50%;
@@ -47,13 +47,19 @@ div.hero {
 
   }
 
+  .hero-bottom-container {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
   .hero-photo {
-    margin: 0 auto;
-    height: 100%;
+    margin: 0 2%;
+    height: 40%;
+    width: calc(46%);
     max-height: 800px;
-    border-top: 1px solid $color-grey;
-    border-bottom: 1px solid $color-grey;
-    background-color: rgba($color-main, .8);
 
     img {
       height: 100%;
@@ -63,21 +69,17 @@ div.hero {
     }
   }
 
-  .block-quote {
-    font-style: italic;
-    font-size: 1em;
-    text-align: center;
-    border: 1px solid $color-grey;
-    height: auto;
-    width: calc(100%/2);
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    z-index: 1;
-    background-color: $color-white;
-    border-radius: $pad/2;
+  .blockquote-container {
+    width: 46%;
+    margin: 0 2%;
 
+    blockquote {
+      width: 80%;
+      height: 80%;
+      margin: 10%;
+      background-color: $color-white;
+      border-radius: $pad;
+    }
     .left-quote {
       height: 100%;
       width: 10%;
@@ -95,6 +97,7 @@ div.hero {
       width: 80%;
       padding: $pad/2 0;
       font-style: italic;
+      font-family: $font-cursive;
     }
 
     .right-quote {
@@ -110,13 +113,18 @@ div.hero {
     }
   }
   @media only screen and (min-width: 540px) {
-    .block-quote {
+    .blockquote {
       font-size: 1.5em;
     }
   }
   @media only screen and (min-width: 760px) {
-    .block-quote {
+    .blockquote {
       font-size: 1.75em;
+    }
+  }
+  @media only screen and (min-width: 960px) {
+    .blockquote {
+      font-size: 2em;
     }
   }
 }

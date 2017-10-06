@@ -1,48 +1,127 @@
 @import "../../../style/_vars.scss";
 
-.navmain {
-  height: 100%;
-  float: left;
 
+.navmain {
   * {
     float: left;
   }
 
-  a {
-    width: 330px;
-    height: 330px;
-    margin: $pad;
+  height: 70%;
+  text-align: center;
+
+  i.fa {
+    font-size: 4em;
+    display: block;
     text-align: center;
-    border-radius: 50%;
-    background: $color-main;
-    position: relative;
-    box-shadow: inset 0 0 2.5em $color-tertiary;
+    color: $color-main;
 
+  }
+    i.fa.fa-user-circle {
+      &:before {
+        font-size: .95em;
+      }
+
+
+  }
+
+  a {
+    font-size: 2em;
+    width: calc(96%/1);
+    margin: 2% calc(2%/1);
+    border: 1px solid $color-main;
     &:hover {
-      background: $color-secondary;
-      color: $color-main;
-
-    }
-
-    p{
-      font-size: $pad*4;
-      transform: translate(0, 140px);
-      font-weight: 600;
-      color: $color-white;
-
-      &:hover {
+      margin: 2% 0;
+      transform: scale(1.05);
+      box-shadow: 5px 5px 5px $color-secondary;
+      i.fa {
+        color: $color-active;
       }
     }
   }
 
-  // a::before{
-  //   content: '';
-  //   position: absolute;
-  //   top: .9em;
-  //   left: -4em;
-  //   width: 4em;
-  //   height: .2em;
-  //   background: dodgerblue;
-  //   z-index: -1;
-  // }
+  h4 {
+    color: $color-white;
+    background-color: $color-main;
+  }
+
+  @media only screen and (min-width: 560px){
+
+    i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center;
+    }
+
+    a.projects-nav {
+      width: calc(96%/1);
+      margin: 2% calc(2%/1);
+
+    }
+    a.community-nav {
+      font-size: 2em;
+      width: calc(94%/3*2);
+      margin: 2% calc(2%/2) 2% calc(2%/1);
+    }
+    a.about-nav {
+      font-size: 2em;
+      width: calc(94%/3);
+      margin: 2% calc(2%/1) 2% calc(2%/2);
+    }
+  }
+  @media only screen and (min-width: 760px){
+
+    i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    a.projects-nav {
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2);
+
+    }
+    a.community-nav {
+      font-size: 2em;
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2);
+    }
+    a.about-nav {
+      font-size: 2em;
+      width: calc(94%/5*1);
+      margin: 2% calc(calc(6%/3) /2);
+    }
+  }
+  @media only screen and (min-width: 960px){
+
+    i.fa {
+      font-size: 4em;
+      display: block;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    a.projects-nav {
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2);
+
+    }
+    a.community-nav {
+      font-size: 2em;
+      width: calc(94%/5*2);
+      margin: 2% calc(calc(6%/3) /2);
+    }
+    a.about-nav {
+      font-size: 2em;
+      width: calc(94%/5*1);
+      margin: 2% calc(calc(6%/3) /2);
+    }
+  }
 }
