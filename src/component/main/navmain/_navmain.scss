@@ -3,7 +3,6 @@
 
 .navmain {
   * {
-    border: 1px solid black;
     float: left;
   }
 
@@ -14,12 +13,34 @@
     font-size: 4em;
     display: block;
     text-align: center;
+    color: $color-main;
+
+  }
+    i.fa.fa-user-circle {
+      &:before {
+        font-size: .95em;
+      }
+
+
   }
 
   a {
     font-size: 2em;
     width: calc(96%/1);
     margin: 2% calc(2%/1);
+    border: 1px solid $color-main;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 5px 5px 5px $color-secondary;
+      i.fa {
+        color: $color-active;
+      }
+    }
+  }
+
+  h4 {
+    color: $color-white;
+    background-color: $color-main;
   }
 
   @media only screen and (min-width: 560px){
