@@ -48,6 +48,7 @@ div.hero {
   }
 
   .hero-bottom-container {
+    height: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,6 +97,7 @@ div.hero {
       width: 80%;
       padding: $pad/2 0;
       font-style: italic;
+      font-family: $font-cursive;
     }
 
     .right-quote {

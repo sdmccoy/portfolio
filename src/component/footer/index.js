@@ -29,7 +29,6 @@ class Footer extends React.Component {
           <img src={devIcon.webpackIcon} />
         </div>
         <div className='footer-bottom'>
-          <img className='footer-photo' src={this.state.footerLogo} />
           <h6 className='footer-signature'>{this.state.footerSignature}</h6>
         </div>
       </div>

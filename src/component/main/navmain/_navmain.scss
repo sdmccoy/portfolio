@@ -30,6 +30,7 @@
     margin: 2% calc(2%/1);
     border: 1px solid $color-main;
     &:hover {
+      margin: 2% 0;
       transform: scale(1.05);
       box-shadow: 5px 5px 5px $color-secondary;
       i.fa {
