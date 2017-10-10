@@ -132,7 +132,7 @@ div.hero {
     }
     h4.title {
       letter-spacing: 2px;
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     .blockquote {
       font-size: 1.75em;
@@ -140,12 +140,25 @@ div.hero {
   }
   @media only screen and (min-width: 960px) {
     h2.name {
-      font-size: 3.25em;
-      letter-spacing: 2px;
+      font-size: 4.1em;
+      letter-spacing: 4px;
     }
     h4.title {
       letter-spacing: 2px;
       font-size: 1.7em;
+    }
+    .blockquote {
+      font-size: 2em;
+    }
+  }
+  @media only screen and (min-width: 1160px) {
+    h2.name {
+      font-size: 5.15em;
+      letter-spacing: 4px;
+    }
+    h4.title {
+      letter-spacing: 2px;
+      font-size: 2em;
     }
     .blockquote {
       font-size: 2em;

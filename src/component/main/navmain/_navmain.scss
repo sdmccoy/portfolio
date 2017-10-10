@@ -36,6 +36,11 @@
       i.fa {
         color: $color-active;
       }
+      h4 {
+        font-weight: 700;
+        color: $color-active;
+      }
+
     }
   }
 
@@ -74,10 +79,25 @@
       font-size: 4em;
       display: block;
       text-align: center;
+      height: 60%;
     }
 
     h4 {
-      font-size: 1.2em;
+      font-size: 1.25em;
+      height: 40%;
+      padding: 10% 0;
+    }
+
+    .about-nav h4 {
+      padding: 16% 0;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 10em;
+
     }
 
     a.projects-nav {
@@ -102,16 +122,29 @@
       font-size: 4em;
       display: block;
       text-align: center;
+      height: 60%;
     }
 
     h4 {
       font-size: 1.5em;
+      height: 40%;
+      padding: 8% 0;
     }
 
+    .about-nav h4 {
+      padding: 14% 0;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 10em;
+
+    }
     a.projects-nav {
       width: calc(94%/5*2);
       margin: 2% calc(calc(6%/3) /2);
-
     }
     a.community-nav {
       font-size: 2em;

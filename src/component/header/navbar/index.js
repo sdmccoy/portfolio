@@ -46,11 +46,11 @@ class NavBar extends React.Component {
         </MediaQuery>
         {util.renderIf(this.state.showHamburgerMenu,
           <div className='navbar-menu'>
-            <Link to='/'>Home</Link>
-            <Link to='/projects'>Projects</Link>
-            <Link to='/community'>Community</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/' onClick={this.handleCompassClick}>Home</Link>
+            <Link to='/projects' onClick={this.handleCompassClick}>Projects</Link>
+            <Link to='/community' onClick={this.handleCompassClick}>Community</Link>
+            <Link to='/about' onClick={this.handleCompassClick}>About</Link>
+            <Link to='/contact' onClick={this.handleCompassClick}>Contact</Link>
           </div>
         )}
       </nav>
