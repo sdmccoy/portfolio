@@ -78,4 +78,23 @@
       }
     }
   }
+
+  .details {
+
+    .devicon-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      // align-items: center;
+      // align-content: space-around;
+
+      img {
+        // height: 98%;
+        width: auto;
+      }
+    }
+
+  }
 }

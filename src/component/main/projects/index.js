@@ -47,7 +47,7 @@ class Projects extends React.Component {
             <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
           </button>
         </div>
-        {util.renderIf(this.state.showProjectDetails,
+        {util.renderIf(true,
           <div className='details'>
             <ul className='feature-list'>
               <li>feature one</li>

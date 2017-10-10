@@ -17,7 +17,7 @@ nav.navbar {
     color: $color-main;
 
     &:hover {
-      color: $color-secondary;
+      color: $color-active;
     }
     &:active {
       color: $color-active;
@@ -40,13 +40,15 @@ nav.navbar {
       font-size: $pad*3;
       border-radius: $pad/2;
       padding: 0 $pad;
-      background-color: $color-main;
-      border: 1px solid $color-secondary;
-      color: $color-white;
+      background-color: $color-white;
+      border: 1px solid $color-main;
+      color: $color-main;
 
       &:hover {
-        background-color: $color-tertiary;
-        color: $color-main;
+        color: $color-active;
+        transform: scale(1.05);
+        font-weight: 600;
+        box-shadow: 5px 5px 5px $color-secondary;
       }
       &:active {
         background-color: $color-active;
@@ -82,12 +84,14 @@ nav.navbar {
 //Nav links that are words
     a.nav-words {
       width: calc(60%/4);
-      font-size: 1.5em;
+      font-size: 1.35em;
       padding: $pad 0;
       border-radius: $pad/2;
       &:hover {
-        background-color: $color-tertiary;
-        color: $color-white;
+        color: $color-active;
+        transform: scale(1.05);
+        font-weight: 600;
+        box-shadow: 5px 5px 5px $color-secondary;
       }
       &:active {
         background-color: $color-active;
@@ -101,15 +105,16 @@ nav.navbar {
   }
 
 // small adjustments for large screens
-}
-  @media only screen and (min-width: 1115px) {
+  @media only screen and (min-width: 860px) {
     a.nav-words {
-      font-size: 2em;
+      font-size: 1.45em;
       padding: $pad 0;
       border-radius: $pad/2;
       &:hover {
-        background-color: $color-tertiary;
-        color: $color-white;
+        color: $color-active;
+        transform: scale(1.05);
+        font-weight: 600;
+        box-shadow: 5px 5px 5px $color-secondary;
       }
       &:active {
         background-color: $color-active;
@@ -117,5 +122,25 @@ nav.navbar {
     }
     a.nav-icon {
       padding: $pad/2 0;
+    }
   }
+  // @media only screen and (min-width: 1115px) {
+  //   a.nav-words {
+  //     font-size: 1.75em;
+  //     padding: $pad 0;
+  //     border-radius: $pad/2;
+  //     &:hover {
+  //       color: $color-active;
+  //       transform: scale(1.05);
+  //       font-weight: 600;
+  //       box-shadow: 5px 5px 5px $color-secondary;
+  //     }
+  //     &:active {
+  //       background-color: $color-active;
+  //     }
+  //   }
+  //   a.nav-icon {
+  //     padding: $pad/2 0;
+  //   }
+  // }
 }
