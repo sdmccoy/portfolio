@@ -1,0 +1,27 @@
+@import "../../../style/_vars.scss";
+
+.community {
+  height: 100%;
+  float: left;
+  text-align: center;
+
+  .headline {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $color-main;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+    margin: 1% 0px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}

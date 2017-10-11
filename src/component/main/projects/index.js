@@ -27,14 +27,13 @@ class Projects extends React.Component {
     return(
       <div className='projects'>
         <h2 className='headline'>
-          Projects
+          PROJECTS
         </h2>
         <div className='device-photo'>
           <img src={sparkleMonkeyPhoto} />
         </div>
         <div className='snapshot'>
           <h2 className='title'>Sparkle Monkey</h2>
-          <h6 className='brief'>Brief :</h6>
           <p>Spicy jalapeno bacon ipsum dolor amet shankle chuck filet mignon drumstick ground round chicken pig pork tail cow salami porchetta boudin prosciutto jowl. Sausage ham hock tongue ribeye, turducken rump pancetta hamburger alcatra pork chop salami. Meatball boudin biltong ground round frankfurter landjaeger pig. Chicken pork loin chuck, boudin salami beef ribs short ribs venison brisket pork chop ham. Tail capicola tri-tip pork pork chop, pork belly alcatra tongue ground round kielbasa fatback shank bacon kevin. Shankle pastrami tri-tip corned beef pork loin pork belly doner leberkas prosciutto capicola cow jerky.</p>
         </div>
         <div className='button-bar'>
@@ -54,9 +53,6 @@ class Projects extends React.Component {
               <li>feature two</li>
               <li>feature three</li>
             </ul>
-            <i onClick={this.handleProjectDetails}
-              className="fa fa-times-circle" aria-hidden="true" >
-            </i>
             <div className='devicon-container'>
               <img src={devIcon.JSIcon} />
               <img src={devIcon.nodeIcon} />
@@ -64,6 +60,11 @@ class Projects extends React.Component {
               <img src={devIcon.HTML5Icon} />
               <img src={devIcon.CSS3Icon} />
             </div>
+            <button className='close-details-button' onClick={this.handleProjectDetails}>
+              <h6>Close</h6>
+              <i className="fa fa-times-circle" aria-hidden="true" >
+              </i>
+            </button>
           </div>
         )}
       </div>

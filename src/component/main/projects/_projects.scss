@@ -9,80 +9,91 @@
   }
 
   .headline {
-    text-align: left;
+    text-align: center;
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 2px;
     color: $color-main;
-    background-color: rgba($color-tertiary, 0.7);
-    box-shadow: inset -6px -4px 0.5em #fff;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+    margin: 1% 0px;
   }
 
   .device-photo {
     position:relative;
+    height: 94%;
+    width: 94%;
+    margin: 1em calc(6%/2);
     box-shadow:0 1px 4px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
-    margin: $pad*2 0;
   }
 
   .snapshot {
 
+    .title, p {
+      width: 94%;
+      margin: 0 calc(6%/2);
+    }
     .title {
       text-align: center;
       font-size: 2.5em;
       font-weight: 400;
-      color: $color-tertiary;
-      background-color: rgba($color-main, 0.8);
-      box-shadow: inset 0px 0px 0.15em #fff;
+      color: $color-white;
+      background-color: rgba($color-main, 1);
       padding: 0 $pad/2;
-    }
-
-    .brief, p {
-      margin: $pad/2 0 0 0;
-      padding: 0 $pad/2;
-    }
-
-    .brief {
-      font-size: 1.5em;
-      font-style: italic;
     }
 
     p {
+      display: block;
+      margin-top: .5em;
+      padding: 0 $pad/2;
       font-size: 1.25em;
+      border: .5px solid $color-grey;
     }
   }
 
   .button-bar {
 
     .visit-site-button, .details-button {
+      width: 94%;
+      margin: 1% calc(6%/2);
       border-radius: .5em;
-      background-color: $color-main;
-      margin: $pad/2 0;
+      background-color: $color-white;
       border: 1px solid $color-grey;
 
 
       &:hover {
-        background-color: $color-tertiary;
+        box-shadow: 5px 5px 5px $color-secondary;
+        transform: scale(1.05);
+
         h6, i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
-          color: $color-main;
+        color: $color-active;
+        font-weight: 700;
         }
       }
 
       h6 {
+        font-weight: 600;
         width: 80%;
-        color: $color-white;
+        color: $color-main;
       }
 
       i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
-        font-size: 1.125;
+        font-size: 1.25em;
         width: 20%;
-        color: $color-white;
+        color: $color-main;
       }
     }
+  }
+  .feature-list {
+    width: 94%;
+    margin: 1% calc(6%/2);
   }
 
   .details {
 
     .devicon-container {
-      width: 100%;
+      width: 94%;
+      margin: 1% calc(6%/2);
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -92,9 +103,173 @@
 
       img {
         // height: 98%;
-        width: auto;
+        width: 4em;
       }
     }
 
+    .close-details-button  {
+      width: 94%;
+      margin: 1% calc(6%/2);
+      border-radius: .5em;
+      background-color: $color-white;
+      border: 1px solid $color-grey;
+
+
+      &:hover {
+        box-shadow: 5px 5px 5px $color-secondary;
+        transform: scale(1.05);
+
+        h6, i.fa.fa-times-circle {
+        color: $color-active;
+        font-weight: 700;
+        }
+      }
+
+      h6 {
+        font-weight: 600;
+        width: 80%;
+        color: $color-main;
+      }
+
+      i.fa.fa-times-circle {
+        font-size: 1.25em;
+        width: 20%;
+        color: $color-main;
+      }
+    }
+  }
+  @media only screen and (min-width: 660px){
+    .headline {
+      text-align: center;
+      font-size: 3em;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: $color-main;
+      border-top: 1px solid $color-main;
+      border-bottom: 1px solid $color-main;
+      margin: 1% 0px;
+    }
+
+    .device-photo {
+      position:relative;
+      height: 60%;
+      width: 60%;
+      margin: 1em calc(40%/2);
+      box-shadow:0 1px 4px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
+    }
+
+    .snapshot {
+
+      .title, p {
+        width: 75%;
+        margin: 0 calc(25%/2);
+      }
+      .title {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 400;
+        color: $color-white;
+        background-color: rgba($color-main, 1);
+        padding: 0 $pad/2;
+      }
+
+      p {
+        display: block;
+        margin-top: .5em;
+        padding: 0 $pad/2;
+        font-size: 1.25em;
+        border: .5px solid $color-grey;
+      }
+    }
+
+    .button-bar {
+      width: 75%;
+      margin: 0 calc(25%/2);
+
+      .visit-site-button, .details-button {
+        width: calc(96%/2);
+        margin: 1% calc(4%/4);
+        border-radius: .5em;
+        background-color: $color-white;
+        border: 1px solid $color-grey;
+
+
+        &:hover {
+          box-shadow: 5px 5px 5px $color-secondary;
+          transform: scale(1.05);
+
+          h6, i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
+          color: $color-active;
+          font-weight: 700;
+          }
+        }
+
+        h6 {
+          font-weight: 600;
+          width: 80%;
+          color: $color-main;
+        }
+
+        i.fa.fa-arrow-circle-right, i.fa.fa-chevron-circle-down {
+          font-size: 1.25em;
+          width: 20%;
+          color: $color-main;
+        }
+      }
+    }
+    .feature-list {
+      width: 75%;
+      margin: 1% calc(25%/2);
+    }
+
+    .details {
+
+      .devicon-container {
+        width: 75%;
+        margin: 1% calc(25%/2);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        // align-items: center;
+        // align-content: space-around;
+
+        img {
+          // height: 98%;
+          width: 4em;
+        }
+      }
+
+      .close-details-button  {
+        width: 75%;
+        margin: 1% calc(25%/2);
+        border-radius: .5em;
+        background-color: $color-white;
+        border: 1px solid $color-grey;
+
+
+        &:hover {
+          box-shadow: 5px 5px 5px $color-secondary;
+          transform: scale(1.05);
+
+          h6, i.fa.fa-times-circle {
+          color: $color-active;
+          font-weight: 700;
+          }
+        }
+
+        h6 {
+          font-weight: 600;
+          width: 80%;
+          color: $color-main;
+        }
+
+        i.fa.fa-times-circle {
+          font-size: 1.25em;
+          width: 20%;
+          color: $color-main;
+        }
+      }
+    }
   }
 }
