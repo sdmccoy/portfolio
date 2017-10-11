@@ -29,7 +29,7 @@ div.hero {
       font-size: 3.25em;
     }
     h4.title {
-      font-size: 2.5em;
+      font-size: 2.25em;
     }
   }
 
@@ -96,7 +96,6 @@ div.hero {
       height: 100%;
       width: 80%;
       padding: $pad/2 0;
-      font-style: italic;
       font-family: $font-cursive;
     }
 
@@ -112,17 +111,55 @@ div.hero {
       }
     }
   }
+
   @media only screen and (min-width: 540px) {
+    h2.name {
+      font-size: 2.25em;
+      letter-spacing: 2px;
+    }
+    h4.title {
+      letter-spacing: 2px;
+      font-size: 1em;
+    }
     .blockquote {
       font-size: 1.5em;
     }
   }
-  @media only screen and (min-width: 760px) {
+  @media only screen and (min-width: 720px) {
+    h2.name {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    h4.title {
+      letter-spacing: 2px;
+      font-size: 1.2em;
+    }
     .blockquote {
       font-size: 1.75em;
     }
   }
   @media only screen and (min-width: 960px) {
+    h2.name {
+      font-size: 4.1em;
+      letter-spacing: 4px;
+    }
+    h4.title {
+      letter-spacing: 2px;
+      font-size: 1.7em;
+    }
+    .blockquote {
+      font-size: 2em;
+    }
+  }
+  @media only screen and (min-width: 1160px) {
+    h2.name {
+      font-size: 5.15em;
+      letter-spacing: 4px;
+    }
+    h4.title {
+      letter-spacing: 2px;
+      font-size: 2em;
+    }
     .blockquote {
       font-size: 2em;
     }
