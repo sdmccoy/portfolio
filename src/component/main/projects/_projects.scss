@@ -8,6 +8,13 @@
     display: block;
   }
 
+  .project-border {
+    width: calc(90%/1);
+    margin: 1% calc(10%/2);
+    border-bottom: 1px solid $color-grey;
+    box-shadow:0 1px 4px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
+  }
+
   .headline {
     text-align: center;
     font-size: 3em;
@@ -35,7 +42,7 @@
     }
     .title {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2em;
       font-weight: 400;
       color: $color-white;
       background-color: rgba($color-main, 1);
@@ -87,6 +94,16 @@
   .feature-list {
     width: 94%;
     margin: 1% calc(6%/2);
+    font-size: 1.25em;
+
+    i.fa.fa-dot-circle-o {
+      width: 10%;
+      margin: $pad 0;
+    }
+    li {
+      width: 90%;
+      margin: $pad 0;
+    }
   }
 
   .details {
@@ -94,16 +111,11 @@
     .devicon-container {
       width: 94%;
       margin: 1% calc(6%/2);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      // align-items: center;
-      // align-content: space-around;
 
       img {
-        // height: 98%;
-        width: 4em;
+        height: 98%;
+        width: calc(90%/5);
+        margin: 1% calc(10%/10);
       }
     }
 

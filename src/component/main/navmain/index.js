@@ -1,8 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import * as projectActions from '../../../actions/project.js';
+import {projects} from '../../../lib/projects.js';
 import './_navmain.scss';
 
 class NavMain extends React.Component {
+  constructor(props){
+    super(props);
+    this.handleProjectSet = this.handleProjectSet.bind(this);
+  }
 
   render(){
     return(
@@ -24,4 +31,8 @@ class NavMain extends React.Component {
   }
 }
 
-export default NavMain;
+const mapDispatchToProps = dispatch => ({
+  projectSet: projects => dispatch(projectActions.projectSet(projects)),
+});
+
+export default connect(null, mapDispatchToProps)(NavMain);
