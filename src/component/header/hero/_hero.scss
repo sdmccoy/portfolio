@@ -13,24 +13,9 @@ div.hero {
     width: 100%;
   }
 
-  @media only screen and (min-width: 540px) {
-    h2.name {
-      font-size: 2.75em;
-      letter-spacing: 2px;
-    }
-    h4.title {
-      letter-spacing: 2px;
-      font-size: 2em;
-    }
-  }
-
-  @media only screen and (min-width: 760px) {
-    h2.name {
-      font-size: 3.25em;
-    }
-    h4.title {
-      font-size: 2.25em;
-    }
+  h4.title {
+    letter-spacing: 2px;
+    font-size: 1.1em;
   }
 
   h2.name, h4.title {
@@ -119,6 +104,19 @@ div.hero {
     }
     h4.title {
       letter-spacing: 2px;
+      font-size: .8em;
+    }
+    .blockquote {
+      font-size: 1.5em;
+    }
+  }
+  @media only screen and (min-width: 620px) {
+    h2.name {
+      font-size: 2.25em;
+      letter-spacing: 2px;
+    }
+    h4.title {
+      letter-spacing: 1.5px;
       font-size: 1em;
     }
     .blockquote {
