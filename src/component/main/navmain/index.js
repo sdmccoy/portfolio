@@ -1,10 +1,25 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import * as projectActions from '../../../actions/project.js';
+import {projects} from '../../../lib/projects.js';
 import './_navmain.scss';
 
 class NavMain extends React.Component {
+  constructor(props){
+    super(props);
+    this.handleProjectSet = this.handleProjectSet.bind(this);
+  }
+
+  handleProjectSet(e){
+    // e.preventDefault();
+    console.log('event = ', e);
+    console.log('!!HPS projecs = ', projects);
+    this.props.projectSet(projects);
+  }
 
   render(){
+    console.log('navmain projs= ', projects);
     return(
       <div className='navmain'>
         <Link to='/projects' className='projects-nav'>
@@ -24,4 +39,8 @@ class NavMain extends React.Component {
   }
 }
 
-export default NavMain;
+const mapDispatchToProps = dispatch => ({
+  projectSet: projects => dispatch(projectActions.projectSet(projects)),
+});
+
+export default connect(null, mapDispatchToProps)(NavMain);
