@@ -8,7 +8,6 @@ import './_navmain.scss';
 class NavMain extends React.Component {
   constructor(props){
     super(props);
-    this.handleProjectSet = this.handleProjectSet.bind(this);
   }
 
   render(){
