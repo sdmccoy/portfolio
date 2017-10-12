@@ -27,7 +27,7 @@ class App extends React.Component {
               <Hero />
             </div>
             <div className='main'>
-              <Route exact path='/*' component={NavMain} />
+              <Route exact path='/' component={NavMain} />
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/about' component={About} />
               <Route exact path='/community' component={Community} />

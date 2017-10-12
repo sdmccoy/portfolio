@@ -56,12 +56,21 @@ class Projects extends React.Component {
                 <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
               </button>
             </div>
-            {util.renderIf(true,
+            {util.renderIf(this.state.showProjectDetails,
               <div className='details'>
                 <ul className='feature-list'>
-                  <li>{project.featureOne}</li>
-                  <li>{project.featureTwo}</li>
-                  <li>{project.featureThree}</li>
+                  <i className="fa fa-dot-circle-o" aria-hidden="true"></i>
+                  <li>
+                    {project.featureOne}
+                  </li>
+                  <i className="fa fa-dot-circle-o" aria-hidden="true"></i>
+                  <li>
+                    {project.featureTwo}
+                  </li>
+                  <i className="fa fa-dot-circle-o" aria-hidden="true"></i>
+                  <li>
+                    {project.featureThree}
+                  </li>
                 </ul>
                 <div className='devicon-container'>
                   <img src={project.devIcons[0]} />
