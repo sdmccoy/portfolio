@@ -86,18 +86,9 @@ div.hero {
   div.hero .hero-top {
     height: 60%;
     width: 100%; }
-  @media only screen and (min-width: 540px) {
-    div.hero h2.name {
-      font-size: 2.75em;
-      letter-spacing: 2px; }
-    div.hero h4.title {
-      letter-spacing: 2px;
-      font-size: 2em; } }
-  @media only screen and (min-width: 760px) {
-    div.hero h2.name {
-      font-size: 3.25em; }
-    div.hero h4.title {
-      font-size: 2.25em; } }
+  div.hero h4.title {
+    letter-spacing: 2px;
+    font-size: 1.1em; }
   div.hero h2.name, div.hero h4.title {
     text-align: center;
     height: 50%;
@@ -161,6 +152,15 @@ div.hero {
       letter-spacing: 2px; }
     div.hero h4.title {
       letter-spacing: 2px;
+      font-size: .8em; }
+    div.hero .blockquote {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 620px) {
+    div.hero h2.name {
+      font-size: 2.25em;
+      letter-spacing: 2px; }
+    div.hero h4.title {
+      letter-spacing: 1.5px;
       font-size: 1em; }
     div.hero .blockquote {
       font-size: 1.5em; } }
@@ -318,6 +318,11 @@ div.hero {
   .projects * {
     float: left;
     display: block; }
+  .projects .project-border {
+    width: calc(90%/1);
+    margin: 1% calc(10%/2);
+    border-bottom: 1px solid #7a7d84;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
   .projects .headline {
     text-align: center;
     font-size: 3em;
@@ -338,7 +343,7 @@ div.hero {
     margin: 0 calc(6%/2); }
   .projects .snapshot .title {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 400;
     color: #fff;
     background-color: #385a74;
@@ -371,16 +376,21 @@ div.hero {
       color: #385a74; }
   .projects .feature-list {
     width: 94%;
-    margin: 1% calc(6%/2); }
+    margin: 1% calc(6%/2);
+    font-size: 1.25em; }
+    .projects .feature-list i.fa.fa-dot-circle-o {
+      width: 10%;
+      margin: 0.5em 0; }
+    .projects .feature-list li {
+      width: 90%;
+      margin: 0.5em 0; }
   .projects .details .devicon-container {
     width: 94%;
-    margin: 1% calc(6%/2);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around; }
+    margin: 1% calc(6%/2); }
     .projects .details .devicon-container img {
-      width: 4em; }
+      height: 98%;
+      width: calc(90%/5);
+      margin: 1% calc(10%/10); }
   .projects .details .close-details-button {
     width: 94%;
     margin: 1% calc(6%/2);
@@ -501,8 +511,6 @@ div.hero {
     border-top: 1px solid #385a74;
     border-bottom: 1px solid #385a74;
     margin: 1% 0px; }
-  .about h3 {
-    margin-top: 30px; }
   .about img {
     width: 50%;
     height: 50%;

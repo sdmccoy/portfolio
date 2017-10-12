@@ -11,15 +11,7 @@ class NavMain extends React.Component {
     this.handleProjectSet = this.handleProjectSet.bind(this);
   }
 
-  handleProjectSet(e){
-    // e.preventDefault();
-    console.log('event = ', e);
-    console.log('!!HPS projecs = ', projects);
-    this.props.projectSet(projects);
-  }
-
   render(){
-    console.log('navmain projs= ', projects);
     return(
       <div className='navmain'>
         <Link to='/projects' className='projects-nav'>
