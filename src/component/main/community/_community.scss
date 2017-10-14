@@ -5,6 +5,10 @@
   float: left;
   text-align: center;
 
+  *{
+    float: left;
+  }
+
   .headline {
     text-align: center;
     font-size: 3em;
@@ -16,12 +20,84 @@
     margin: 1% 0px;
   }
 
-  h2 {
-    margin-top: 30px;
+  .volunteer-container {
+    h3 {
+      font-size: 3em;
+      margin: 5% auto 2% auto;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+      margin: 1% calc(50%/2);
+    }
+    h4 {
+      width: 50%;
+      margin: 0 calc(50%/2);
+      text-align: center;
+      font-size: 2em;
+      font-weight: 400;
+      color: $color-white;
+      background-color: rgba($color-main, 1);
+      padding: 0 $pad/2;
+    }
+  @media only screen and (max-width: 620px){
+    h4 {
+      font-size: 1.5em;
+    }
+  }
+    h5 {
+      width: 50%;
+      margin: 1% calc(50%/2);
+      padding: 1%;
+      text-align: center;
+      border: 1px solid $color-grey;
+    }
+
+    .visit-site-button {
+      width: 50%;
+      margin: 1% calc(50%/2);
+      border-radius: .5em;
+      background-color: $color-white;
+      border: 1px solid $color-grey;
+
+
+      &:hover {
+        box-shadow: 5px 5px 5px $color-secondary;
+        transform: scale(1.05);
+
+        h6, i.fa.fa-arrow-circle-right {
+        color: $color-active;
+        font-weight: 700;
+        }
+      }
+
+      h6 {
+        font-weight: 600;
+        width: 80%;
+        color: $color-main;
+      }
+
+      i.fa.fa-arrow-circle-right {
+        font-size: 1.25em;
+        width: 20%;
+        color: $color-main;
+      }
+    }
+  }
+  .community-border {
+    width: calc(90%/1);
+    margin: 2% calc(10%/2);
+    border-bottom: 1px solid $color-grey;
+    box-shadow:0 1px 4px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
   }
   img {
     width: 50%;
     height: 50%;
-    margin: 0 auto;
+    margin: 1% auto;
+    box-shadow:0 1px 4px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
+  }
+
+  .meetup-logo {
+    box-shadow: none;
   }
 }
