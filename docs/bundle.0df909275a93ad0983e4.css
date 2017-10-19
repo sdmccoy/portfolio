@@ -314,7 +314,17 @@ div.hero {
       font-family: "Satisfy", cursive; }
 .projects {
   height: 100%;
-  float: left; }
+  float: left;
+  animation-duration: 300ms;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%; }
+  to {
+    margin-top: 0%;
+    width: 100%; } }
   .projects * {
     float: left;
     display: block; }
@@ -501,7 +511,17 @@ div.hero {
 .about {
   height: 100%;
   float: left;
-  text-align: center; }
+  text-align: center;
+  animation-duration: 300ms;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%; }
+  to {
+    margin-top: 0%;
+    width: 100%; } }
   .about .headline {
     text-align: center;
     font-size: 3em;
@@ -518,7 +538,17 @@ div.hero {
 .community {
   height: 100%;
   float: left;
-  text-align: center; }
+  text-align: center;
+  animation-duration: 300ms;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%; }
+  to {
+    margin-top: 0%;
+    width: 100%; } }
   .community * {
     float: left; }
   .community .headline {

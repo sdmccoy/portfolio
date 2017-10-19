@@ -3,6 +3,22 @@
 .projects {
   height: 100%;
   float: left;
+  animation-duration: 300ms;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+
+
   * {
     float: left;
     display: block;
