@@ -37,25 +37,28 @@ class Projects extends React.Component {
         </h2>
         {this.props.projects.map((project, i) => {
           return <div className='project-container' key={i}>
-            <div className='device-photo'>
-              <img src={project.photo} />
+            <div className='main-details'>
+              <div className='device-photo'>
+                <img src={project.photo} />
+              </div>
+              <div className='snapshot'>
+                <h2 className='title'>{project.name}</h2>
+                <p>{project.description}</p>
+              </div>
+              <div className='button-bar'>
+                <button className='visit-site-button'>
+                  <Link to={project.websiteURL} target='_blank'>
+                    <h6>Visit Site</h6>
+                    <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  </Link>
+                </button>
+                <button className='details-button' onClick={this.handleProjectDetails}>
+                  <h6>Details</h6>
+                  <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
-            <div className='snapshot'>
-              <h2 className='title'>{project.name}</h2>
-              <p>{project.description}</p>
-            </div>
-            <div className='button-bar'>
-              <button className='visit-site-button'>
-                <Link to={project.websiteURL} target='_blank'>
-                  <h6>Visit Site</h6>
-                  <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                </Link>
-              </button>
-              <button className='details-button' onClick={this.handleProjectDetails}>
-                <h6>Details</h6>
-                <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
-              </button>
-            </div>
+            <div className='clear-float'></div>
             {util.renderIf(this.state.showProjectDetails,
               <div className='details'>
                 <ul className='feature-list'>

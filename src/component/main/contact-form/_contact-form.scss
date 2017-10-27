@@ -1,0 +1,114 @@
+@import "../../../style/_vars.scss";
+
+.contact-container {
+  height: 100%;
+  float: left;
+  text-align: center;
+  animation-duration: 300ms;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+
+
+  *{
+    float: left;
+  }
+
+  .headline {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $color-main;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+    margin: 1% 0px;
+  }
+
+  h4 {
+    font-size: 2em;
+    margin-top: 1%;
+  }
+
+  div {
+    width: 100%;
+
+    a {
+      width: 60%;
+      margin: 2% 20% 0 20%;
+      text-align: center;
+    }
+
+    .fa-linkedin-square {
+      font-size: 13em;
+      display: block;
+      color: $color-main;
+
+      &:hover {
+        color: $color-active;
+      }
+      &:active {
+        color: $color-active;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 520px){
+
+    div {
+      width: 100%;
+
+      a {
+        width: 60%;
+        margin: 2% 20% 0 20%;
+      }
+
+      .fa-linkedin-square {
+        font-size: 18em;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 740px){
+
+    div {
+      width: 100%;
+
+      a {
+        width: 60%;
+        margin: 2% 20% 0 20%;
+      }
+
+      .fa-linkedin-square {
+        font-size: 30em;
+        }
+      }
+    }
+
+  @media only screen and (min-width: 960px){
+
+    div {
+      width: 100%;
+
+      a {
+        width: 40%;
+        margin: 2% 30% 0 30%;
+      }
+
+      .fa-linkedin-square {
+        font-size: 30em;
+        }
+      }
+    }
+
+}

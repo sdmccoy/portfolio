@@ -31,6 +31,7 @@ class App extends React.Component {
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/about' component={About} />
               <Route exact path='/community' component={Community} />
+              <Route exact path='/contact' component={ContactForm} />
             </div>
             <div className='footer'>
               <Footer />

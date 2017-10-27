@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);nav.navbar {
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);nav.navbar {
   height: 5%;
   float: left;
   position: relative; }
@@ -191,6 +191,72 @@ div.hero {
       font-size: 2em; }
     div.hero .blockquote {
       font-size: 2em; } }
+.contact-container {
+  height: 100%;
+  float: left;
+  text-align: center;
+  animation-duration: 300ms;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%; }
+  to {
+    margin-top: 0%;
+    width: 100%; } }
+  .contact-container * {
+    float: left; }
+  .contact-container .headline {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #385a74;
+    border-top: 1px solid #385a74;
+    border-bottom: 1px solid #385a74;
+    margin: 1% 0px; }
+  .contact-container h4 {
+    font-size: 2em;
+    margin-top: 1%; }
+  .contact-container div {
+    width: 100%; }
+    .contact-container div a {
+      width: 60%;
+      margin: 2% 20% 0 20%;
+      text-align: center; }
+    .contact-container div .fa-linkedin-square {
+      font-size: 13em;
+      display: block;
+      color: #385a74; }
+      .contact-container div .fa-linkedin-square:hover {
+        color: #df745f; }
+      .contact-container div .fa-linkedin-square:active {
+        color: #df745f; }
+  @media only screen and (min-width: 520px) {
+    .contact-container div {
+      width: 100%; }
+      .contact-container div a {
+        width: 60%;
+        margin: 2% 20% 0 20%; }
+      .contact-container div .fa-linkedin-square {
+        font-size: 18em; } }
+  @media only screen and (min-width: 740px) {
+    .contact-container div {
+      width: 100%; }
+      .contact-container div a {
+        width: 60%;
+        margin: 2% 20% 0 20%; }
+      .contact-container div .fa-linkedin-square {
+        font-size: 30em; } }
+  @media only screen and (min-width: 960px) {
+    .contact-container div {
+      width: 100%; }
+      .contact-container div a {
+        width: 40%;
+        margin: 2% 30% 0 30%; }
+      .contact-container div .fa-linkedin-square {
+        font-size: 30em; } }
 .navmain {
   height: 70%;
   text-align: center; }
@@ -394,6 +460,8 @@ div.hero {
     .projects .feature-list li {
       width: 90%;
       margin: 0.5em 0; }
+  .projects .main-details {
+    position: relative; }
   .projects .details .devicon-container {
     width: 94%;
     margin: 1% calc(6%/2); }
@@ -535,6 +603,9 @@ div.hero {
     width: 50%;
     height: 50%;
     margin: 0 auto; }
+
+.fa.fa-coffee {
+  display: inline; }
 .community {
   height: 100%;
   float: left;
