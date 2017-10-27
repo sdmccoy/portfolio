@@ -1,5 +1,6 @@
 import * as devIcon from './dev-icons.js';
 import sparkleMonkeyPhoto from '../../assets/project-photo-sparklemonkey-medium.png';
+import eSkatePhoto from '../../assets/project-photo-eskate-medium.png';
 
 export const projects = [
   {
@@ -14,7 +15,7 @@ export const projects = [
   },
   {
     name: 'E-Skate',
-    photo: sparkleMonkeyPhoto,
+    photo: eSkatePhoto,
     websiteURL: 'http://e-skate.tech/',
     description: 'E-Skate is an eCommerce site built to expand the clients customer reach and share. I provided the client with a separate admin interface, upon authorization, to control their inventory with create, update, or delete operations on their products. Since the client is in their beginning growth stage, I implemented the ability to change their store logo, contact information, and social media in case any rebranding takes place during their growth.',
     featureOne: 'Full-Stack application with admin interface allowing CRUD operations on items and store settings.',

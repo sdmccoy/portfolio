@@ -75,7 +75,6 @@
   }
 
   .button-bar {
-
     .visit-site-button, .details-button {
       width: 94%;
       margin: 1% calc(6%/2);
@@ -121,7 +120,9 @@
       margin: $pad 0;
     }
   }
-
+  .main-details {
+    position: relative;
+  }
   .details {
 
     .devicon-container {
