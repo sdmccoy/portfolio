@@ -1,5 +1,8 @@
 # A Personal Portfolio
 
+### Deployed site
+[scottmccoy.codes](http://scottmccoy.codes/)
+
 ## Description
 
 A front-end web application that will display specified content from the following categories.
