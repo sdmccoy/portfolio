@@ -1,5 +1,8 @@
 # A Personal Portfolio
 
+### Deployed site
+[scottmccoy.codes](http://scottmccoy.codes/)
+
 ## Description
 
 A front-end web application that will display specified content from the following categories.
@@ -15,16 +18,14 @@ Utilizing Single Page Application methodology for user actions and content rende
 
 - Header-container
   - Nav bar
+  - Hero image & quote
 - Body-container
-  - Call to Action
-    - Hire form
-    - Freelance form
   - Category Icons
     - Projects
-    - About
     - Community
+    - About
 - Footer-container
-  - Contact form
+  - Developer tool icons
 
 ## Tools
 
@@ -43,9 +44,8 @@ When the project is clicked, it will open a project item component that will hav
 - Image: displaying 3 different viewport sizes of the web app
 - Title
 - Description
-- Tools
 - Button to the deployed site
-- Button to return to the projects page
+- Button to expand details and tools used
 
 ### Community
 
@@ -54,20 +54,6 @@ This component will display the authors involvement in the community.
 - Volunteer work
 - Meetups
 
-Attempting to utilize the Meetup API to pull information for groups the author is involved with.
-
 ### About
 
 This category is about the author and his lifestyle when he's not immersed in the tech industry.
-
-Layout is TBD.
-
-#### Call to Action
-
-Mid-landing page is a call-to-action where the user can click on a button to contact the developer.
-
-Buttons:
-- I'm looking to hire
-  - A user trying to fill a position at their company
-- I need a website / feature built
-  - A user needing freelance work done
