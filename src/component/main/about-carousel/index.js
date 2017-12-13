@@ -1,5 +1,7 @@
 import React from 'react';
 import * as about from '../../../lib/about.js';
+//style
+import './_about-carousel.scss';
 
 class AboutCarousel extends React.Component{
   constructor(props){
@@ -18,20 +20,16 @@ class AboutCarousel extends React.Component{
   }
 
   handleSlideToggle(direction, category){
-    console.log('direction = ', direction);
-    console.log('category = ', category);
-    console.log('this.state = ', this.state);
+
     let currentIndex = category === 'art' ?
       this.state.artCurrentActiveIndex
       :
       this.state.advCurrentActiveIndex;
-    console.log('cur index  = ', currentIndex);
 
     let slideLength = category === 'art' ?
       about.artificer.length - 1
       :
       about.adventurer.length - 1;
-    console.log('slide lenght = ', slideLength);
 
     let newIndex = 0;
 
@@ -51,10 +49,6 @@ class AboutCarousel extends React.Component{
         :
         currentIndex - 1;
     }
-    console.log('newIndex after = ', newIndex);
-    console.log('cur index after = ', currentIndex);
-    console.log('about.artificer  = ', about.artificer);
-    console.log('about.artificer[newindex]  = ', about.artificer[newIndex]);
     category === 'art' ?
       this.setState({
         artPhoto: about.artificer[newIndex].photo,
@@ -87,49 +81,69 @@ class AboutCarousel extends React.Component{
 
 
   render(){
+    let chevronLeft = '<';
+    let chevronRight = '>';
     return(
       <div className='carousel-container'>
-        <h3>Here is a little taste of what makes me happy.</h3>
-        <h2>Artificer</h2>
+        <h4>Below are some hobbies of mine that make me happy. A great conversation starter!</h4>
+        <h3>Artificer</h3>
         <h5>Using that logic-based creativity to hand craft functioning art for others.</h5>
         <div className='active-picture'>
           <div className='toggle-left'
             onClick={() => this.handleSlideToggle('left', 'art')}
           >
-            <i className="fa fa-chevron-left" aria-hidden="true"></i>
+            {chevronLeft}
           </div>
           <img src={this.state.artPhoto} />
-          <h3>{this.state.artTitle}</h3>
           <div className='toggle-right'
             onClick={() => this.handleSlideToggle('right', 'art')}
           >
-            <i className="fa fa-chevron-right"    aria-hidden="true"></i>
+            {chevronRight}
           </div>
+          <h3 className='active-title'>
+            {this.state.artTitle}
+          </h3>
         </div>
-        {about.artificer.map((art, i) => {
-          return <div key={i} className='artificer-container'
-            onClick={() => this.handleActiveArtItem(art, i)}
-          >
-            <h3 className='title'>{art.name}</h3>
-            <img src={art.photo} />
-          </div>;
-        })
-        }
+        <div className='clear-float'></div>
+        <div className='thumbnail-container'>
+          {about.artificer.map((art, i) => {
+            return <div key={i} className='artificer-item'
+              onClick={() => this.handleActiveArtItem(art, i)}
+            >
+              <img src={art.photo} />
+            </div>;
+          })
+          }
+        </div>
+        <div className='clear-float'></div>
+        <div className='border'></div>
         <h2>Adventurer</h2>
         <h5>Harnessing the power of nature to connect on a thrilling level.</h5>
         <div className='active-picture'>
-          <img src={this.state.advPhoto} />
-          <h3>{this.state.advTitle}</h3>
-        </div>
-        {about.adventurer.map((adv, i) => {
-          return <div key={i} className='adventure-container'
-            onClick={() => this.handleActiveAdvItem(adv, i)}
+          <div className='toggle-left'
+            onClick={() => this.handleSlideToggle('left', 'adv')}
           >
-            <h3 className='title'>{adv.name}</h3>
-            <img src={adv.photo} />
-          </div>;
-        })
-        }
+            {chevronLeft}
+          </div>
+          <img src={this.state.advPhoto} />
+          <div className='toggle-right'
+            onClick={() => this.handleSlideToggle('right', 'adv')}
+          >
+            {chevronRight}
+          </div>
+          <h3 className='active-title'>{this.state.advTitle}</h3>
+        </div>
+        <div className='clear-float'></div>
+        <div className='thumbnail-container'>
+          {about.adventurer.map((adv, i) => {
+            return <div key={i} className='adventurer-item'
+              onClick={() => this.handleActiveAdvItem(adv, i)}
+            >
+              <img src={adv.photo} />
+            </div>;
+          })
+          }
+        </div>
       </div>
     );
   }

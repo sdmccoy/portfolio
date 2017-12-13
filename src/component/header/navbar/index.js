@@ -20,7 +20,6 @@ class NavBar extends React.Component {
   }
 
   render(){
-    console.log('window = ', window);
     return(
       <nav className='navbar' onClick={this.handleCompassClick}>
         <MediaQuery minWidth={760}>

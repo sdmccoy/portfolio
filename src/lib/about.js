@@ -1,13 +1,12 @@
-import climbing from '../../assets/about/climbing720.png';
-import kiting from '../../assets/about/kiting720.png';
-import mtb from '../../assets/about/mtb720.png';
-import skiing from '../../assets/about/skiing720.png';
-import cube from '../../assets/about/cube720.png';
-import endtable from '../../assets/about/endtable720.png';
-import firepit from '../../assets/about/firepit720.png';
-import rustic from '../../assets/about/rusticcoffeetable720.png';
-import winerack from '../../assets/about/winerack720.png';
-import tiletable from '../../assets/about/tiletable720.png';
+import climbing from '../../assets/about/climbing1550.png';
+import kiting from '../../assets/about/kiting1550.png';
+import mtb from '../../assets/about/mtb1550.png';
+import skiing from '../../assets/about/skiing1550.png';
+import cube from '../../assets/about/cube1550.png';
+import endtable from '../../assets/about/endtable1550.png';
+import firepit from '../../assets/about/firepit1550.png';
+import rustic from '../../assets/about/rustic1550.png';
+import tiletable from '../../assets/about/tiletable1550.png';
 
 export const adventurer = [
   {
@@ -44,10 +43,6 @@ export const artificer = [
   {
     name: 'Rustic Coffee Table',
     photo: rustic,
-  },
-  {
-    name: 'Wine Rack',
-    photo: winerack,
   },
   {
     name: 'Tile Table',

@@ -19,7 +19,7 @@ class About extends React.Component {
         <h2 className='headline'>
         ABOUT
         </h2>
-        <h3>Let's go out for <i className="fa fa-coffee" aria-hidden="true"></i> and learn more about each other. </h3>
+        <h3>Let's go out for <i className="fa fa-coffee" aria-hidden="true"></i> to learn more about each other. </h3>
         <h3>Message me on <Link to='https://www.linkedin.com/in/sdmccoy/'       className='nav-icon' target='_blank'>
           <i className='fa fa-linkedin-square' aria-hidden='true'></i>
         </Link> to set it up!</h3>
