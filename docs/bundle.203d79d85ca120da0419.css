@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);nav.navbar {
+@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Satisfy);@import url(https://fonts.googleapis.com/css?family=Raleway:300);nav.navbar {
   height: 5%;
   float: left;
   position: relative; }
@@ -576,6 +576,75 @@ div.hero {
         font-size: 1.25em;
         width: 20%;
         color: #385a74; } }
+.carousel-container h4 {
+  width: 50%;
+  margin: 1% calc(50%/2);
+  padding: 1%;
+  text-align: center; }
+
+.carousel-container h3 {
+  font-size: 3em; }
+
+.carousel-container h5 {
+  width: 50%;
+  margin: 1% calc(50%/2);
+  padding: 1%;
+  text-align: center;
+  border: 1px solid #7a7d84; }
+
+.carousel-container .active-picture {
+  height: 50%;
+  position: relative;
+  width: 50%;
+  margin: 0 25%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .carousel-container .active-picture * {
+    float: left; }
+  .carousel-container .active-picture h3.active-title {
+    width: 100%;
+    background-color: #385a74;
+    color: #fff;
+    margin: 2% 0; }
+  .carousel-container .active-picture .toggle-left, .carousel-container .active-picture .toggle-right {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 10%;
+    height: 100%;
+    margin: 25% 0;
+    padding: 5% 0 15% 0;
+    position: absolute;
+    font-size: 4em;
+    font-weight: 600; }
+    .carousel-container .active-picture .toggle-left:hover, .carousel-container .active-picture .toggle-right:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.3); }
+  .carousel-container .active-picture .toggle-left {
+    left: 0; }
+  .carousel-container .active-picture .toggle-right {
+    right: 0; }
+
+.thumbnail-container {
+  height: auto;
+  margin: 1% 0; }
+  .thumbnail-container img {
+    border-radius: .25em; }
+  .thumbnail-container .artificer-item {
+    float: left;
+    width: calc(90%/5);
+    margin: 1%;
+    border: 1px solid #000;
+    border-radius: .25em; }
+  .thumbnail-container .adventurer-item {
+    float: left;
+    width: calc(90%/4);
+    margin: 1.25%;
+    border: 1px solid #000;
+    border-radius: .25em; }
+
+.border {
+  width: calc(90%/1);
+  margin: 1% calc(10%/2);
+  border-bottom: 1px solid #7a7d84;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
 .about {
   height: 100%;
   float: left;
@@ -599,13 +668,15 @@ div.hero {
     border-top: 1px solid #385a74;
     border-bottom: 1px solid #385a74;
     margin: 1% 0px; }
-  .about img {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto; }
 
-.fa.fa-coffee {
+a, .fa.fa-coffee, .fa.fa-linkedin-square {
   display: inline; }
+
+.adv-container * {
+  display: block;
+  height: 200px;
+  width: 100%;
+  float: left; }
 .community {
   height: 100%;
   float: left;
