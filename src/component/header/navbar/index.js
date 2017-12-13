@@ -21,7 +21,7 @@ class NavBar extends React.Component {
 
   render(){
     return(
-      <nav className='navbar'>
+      <nav className='navbar' onClick={this.handleCompassClick}>
         <MediaQuery minWidth={760}>
           <Link to='/' className='nav-icon'><i className="fa fa-home" aria-hidden="true"></i></Link>
           <Link to='/projects' className='nav-words'>Projects</Link>

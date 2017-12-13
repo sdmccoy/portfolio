@@ -31,13 +31,18 @@
     margin: 1% 0px;
   }
 
-  img {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-  }
 }
 
-.fa.fa-coffee {
+a, .fa.fa-coffee, .fa.fa-linkedin-square {
   display: inline;
+}
+
+.adv-container {
+
+  *{
+    display: block;
+    height: 200px;
+    width: 100%;
+    float: left;
+  }
 }
