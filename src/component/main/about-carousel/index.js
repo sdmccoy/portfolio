@@ -117,7 +117,7 @@ class AboutCarousel extends React.Component{
         </div>
         <div className='clear-float'></div>
         <div className='border'></div>
-        <h2>Adventurer</h2>
+        <h3>Adventurer</h3>
         <h5>Harnessing the power of nature to connect on a thrilling level.</h5>
         <div className='active-picture'>
           <div className='toggle-left'
@@ -131,7 +131,9 @@ class AboutCarousel extends React.Component{
           >
             {chevronRight}
           </div>
-          <h3 className='active-title'>{this.state.advTitle}</h3>
+          <h3 className='active-title'>
+            {this.state.advTitle}
+          </h3>
         </div>
         <div className='clear-float'></div>
         <div className='thumbnail-container'>

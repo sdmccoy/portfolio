@@ -3,11 +3,22 @@
 .carousel-container{
 
   h4{
-    margin: 2% 0;
+    width: 50%;
+    margin: 1% calc(50%/2);
+    padding: 1%;
+    text-align: center;
   }
 
   h3{
     font-size: 3em;
+  }
+
+  h5 {
+    width: 50%;
+    margin: 1% calc(50%/2);
+    padding: 1%;
+    text-align: center;
+    border: 1px solid $color-grey;
   }
 
 .active-picture{
@@ -21,13 +32,14 @@
     float: left;
   }
 
-  img{
+  img, h3.active-title{
   }
 
   h3.active-title{
     width: 100%;
     background-color: rgba($color-main, 1);
     color: $color-white;
+    margin: 2% 0;
   }
 
   .toggle-left, .toggle-right{
