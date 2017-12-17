@@ -581,9 +581,19 @@ div.hero {
   margin: 1% calc(50%/2);
   padding: 1%;
   text-align: center; }
+  @media only screen and (max-width: 620px) {
+    .carousel-container h4 {
+      width: 96%;
+      margin: 2%;
+      font-size: 1.5em; } }
 
 .carousel-container h3 {
   font-size: 3em; }
+  @media only screen and (max-width: 620px) {
+    .carousel-container h3 {
+      width: 96%;
+      margin: 2%;
+      font-size: 2.5em; } }
 
 .carousel-container h5 {
   width: 50%;
@@ -591,20 +601,33 @@ div.hero {
   padding: 1%;
   text-align: center;
   border: 1px solid #7a7d84; }
+  @media only screen and (max-width: 620px) {
+    .carousel-container h5 {
+      width: 90%;
+      margin: 2% 5%;
+      font-size: 1em; } }
 
 .carousel-container .active-picture {
   height: 50%;
   position: relative;
   width: 50%;
-  margin: 0 25%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  margin: 0 25%; }
+  @media only screen and (max-width: 620px) {
+    .carousel-container .active-picture {
+      width: 90%;
+      margin: 0 5%; } }
   .carousel-container .active-picture * {
     float: left; }
+  .carousel-container .active-picture img, .carousel-container .active-picture h3.active-title {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
   .carousel-container .active-picture h3.active-title {
     width: 100%;
     background-color: #385a74;
     color: #fff;
     margin: 2% 0; }
+    @media only screen and (max-width: 620px) {
+      .carousel-container .active-picture h3.active-title {
+        font-size: 2em; } }
   .carousel-container .active-picture .toggle-left, .carousel-container .active-picture .toggle-right {
     background-color: rgba(255, 255, 255, 0.2);
     width: 10%;
@@ -614,6 +637,11 @@ div.hero {
     position: absolute;
     font-size: 4em;
     font-weight: 600; }
+    @media only screen and (max-width: 620px) {
+      .carousel-container .active-picture .toggle-left, .carousel-container .active-picture .toggle-right {
+        width: 10%;
+        padding: 5% 0 20% 0;
+        font-size: 2em; } }
     .carousel-container .active-picture .toggle-left:hover, .carousel-container .active-picture .toggle-right:hover {
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.3); }
@@ -631,14 +659,18 @@ div.hero {
     float: left;
     width: calc(90%/5);
     margin: 1%;
-    border: 1px solid #000;
-    border-radius: .25em; }
+    border-radius: .25em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+    .thumbnail-container .artificer-item:hover {
+      transform: scale(1.05); }
   .thumbnail-container .adventurer-item {
     float: left;
     width: calc(90%/4);
     margin: 1.25%;
-    border: 1px solid #000;
-    border-radius: .25em; }
+    border-radius: .25em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+    .thumbnail-container .adventurer-item:hover {
+      transform: scale(1.05); }
 
 .border {
   width: calc(90%/1);
