@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import onClickOutside from 'react-onclickoutside';
 import MediaQuery from 'react-responsive';
 import * as util from '../../../lib/util.js';
 import './_navbar.scss';
@@ -11,17 +13,26 @@ class NavBar extends React.Component {
       showHamburgerMenu: false,
     };
     this.handleCompassClick = this.handleCompassClick.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  handleClickOutside(event) {
+    this.state.showHamburgerMenu ?
+      this.setState({showHamburgerMenu: false})
+      :
+      undefined
+    ;
   }
 
   handleCompassClick(){
-    !this.state.showHamburgerMenu ?
-      this.setState({showHamburgerMenu: true}) :
-      this.setState({showHamburgerMenu: false});
+    this.setState({showHamburgerMenu: !this.state.showHamburgerMenu}); 
   }
 
   render(){
     return(
-      <nav className='navbar' onClick={this.handleCompassClick}>
+      <nav className='navbar'
+        onClick={this.handleCompassClick}
+      >
         <MediaQuery minWidth={760}>
           <Link to='/' className='nav-icon'><i className="fa fa-home" aria-hidden="true"></i></Link>
           <Link to='/projects' className='nav-words'>Projects</Link>
@@ -58,4 +69,4 @@ class NavBar extends React.Component {
   }
 }
 
-export default NavBar;
+export default onClickOutside(NavBar);
