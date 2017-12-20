@@ -1,6 +1,6 @@
 import React from 'react';
 import {Provider} from 'react-redux';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import appStoreCreate from '../../lib/app-store-create.js';
 import NavBar from '../header/navbar';
 import Hero from '../header/hero';
@@ -27,11 +27,14 @@ class App extends React.Component {
               <Hero />
             </div>
             <div className='main'>
-              <Route exact path='/projects' component={Projects} />
-              <Route exact path='/community' component={Community} />
-              <Route exact path='/about' component={About} />
-              <Route exact path='/contact' component={ContactForm} />
-              <Route exact path='/' component={NavMain} />
+              <Switch>
+                <Route exact path='/' component={NavMain} />
+                <Route exact path='/projects' component={Projects} />
+                <Route exact path='/community' component={Community} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/contact' component={ContactForm} />
+                <Route component={NavMain} />
+              </Switch>
             </div>
             <div className='footer'>
               <Footer />
