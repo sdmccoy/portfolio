@@ -8,8 +8,10 @@ import sassIcon from '../../assets/devicons/sass-original.svg';
 import postgreSQLIcon from '../../assets/devicons/postgresql-original-wordmark.svg';
 import mongoDBIcon from '../../assets/devicons/mongodb-original-wordmark.svg';
 import webpackIcon from '../../assets/devicons/webpack-original-wordmark.svg';
+import materialIcon from '../../assets/devicons/material-ui.svg';
+import reduxIcon from '../../assets/devicons/redux.svg';
 
-export {JSIcon, nodeIcon, reactIcon, jQueryIcon, HTML5Icon, CSS3Icon, sassIcon, postgreSQLIcon, mongoDBIcon, webpackIcon};
+export {JSIcon, nodeIcon, reactIcon, jQueryIcon, HTML5Icon, CSS3Icon, sassIcon, postgreSQLIcon, mongoDBIcon, webpackIcon, materialIcon, reduxIcon};
 
 
 // export const JSIcon = '../../assets/devicons/javascript-original.svg';
