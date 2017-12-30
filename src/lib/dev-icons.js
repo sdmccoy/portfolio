@@ -12,15 +12,3 @@ import materialIcon from '../../assets/devicons/material-ui.svg';
 import reduxIcon from '../../assets/devicons/redux.svg';
 
 export {JSIcon, nodeIcon, reactIcon, jQueryIcon, HTML5Icon, CSS3Icon, sassIcon, postgreSQLIcon, mongoDBIcon, webpackIcon, materialIcon, reduxIcon};
-
-
-// export const JSIcon = '../../assets/devicons/javascript-original.svg';
-// export const nodeIcon = '../../assets/devicons/nodejs-original-wordmark.svg';
-// export const reactIcon = '../../assets/devicons/react-original-wordmark.svg';
-// export const jQueryIcon = '../../assets/devicons/jquery-original-wordmark.svg';
-// export const HTML5Icon = '../../assets/devicons/html5-original-wordmark.svg';
-// export const CSS3Icon = '../../assets/devicons/css3-original-wordmark.svg';
-// export const sassIcon = '../../assets/devicons/sass-original.svg';
-// export const postgreSQLIcon = '../../assets/devicons/postgresql-original-wordmark.svg';
-// export const mongoDBIcon = '../../assets/devicons/mongodb-original-wordmark.svg';
-// export const webpackIcon = '../../assets/devicons/webpack-original-wordmark.svg';
