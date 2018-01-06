@@ -466,9 +466,8 @@ div.hero {
     width: 94%;
     margin: 1% calc(6%/2); }
     .projects .details .devicon-container img {
-      height: 98%;
-      width: calc(90%/5);
-      margin: 1% calc(10%/10); }
+      width: calc(80%/5);
+      margin: 1% calc(20%/10); }
   .projects .details .close-details-button {
     width: 94%;
     margin: 1% calc(6%/2);
@@ -548,14 +547,11 @@ div.hero {
       width: 75%;
       margin: 1% calc(25%/2); }
     .projects .details .devicon-container {
-      width: 75%;
-      margin: 1% calc(25%/2);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around; }
+      width: 80%;
+      margin: 1% calc(20%/2); }
       .projects .details .devicon-container img {
-        width: 4em; }
+        width: calc(70%/5);
+        margin: 1% calc(30%/10); }
     .projects .details .close-details-button {
       width: 75%;
       margin: 1% calc(25%/2);
