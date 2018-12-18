@@ -14,7 +14,6 @@ class Footer extends React.Component {
   }
 
   render(){
-    console.log('props = ', this.props)
     return(
       <div className='footer-container'>
         <div className='devicon-container'>

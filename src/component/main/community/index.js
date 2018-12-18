@@ -15,7 +15,6 @@ class Community extends React.Component {
 
 
   render(){
-    console.log('prps = ', this.props)
     return(
       <div className='community'>
         <h2 className='headline'>
