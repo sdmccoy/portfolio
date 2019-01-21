@@ -1,7 +1,7 @@
 # A Personal Portfolio
 
 ### Deployed site
-[scottmccoy.codes](http://scottmccoy.codes/)
+[scottmccoy.tech](http://scottmccoy.tech/)
 
 ## Description
 
