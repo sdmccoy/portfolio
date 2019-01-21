@@ -1,5 +1,5 @@
 import * as devIcon from './dev-icons.js';
-import sparkleMonkeyPhoto from '../../assets/project-photo-sparklemonkey-medium.png';
+import musicMonkeyPhoto from '../../assets/project-photo-musicmonkey-medium.png';
 import eSkatePhoto from '../../assets/project-photo-eskate-medium.png';
 import yaketyakPhoto from '../../assets/project-photo-yaketyak-medium.png';
 
@@ -25,10 +25,10 @@ export const projects = [
     devIcons: [devIcon.nodeIcon, devIcon.reactIcon, devIcon.sassIcon, devIcon.mongoDBIcon, devIcon.webpackIcon],
   },
   {
-    name: 'Sparkle Monkey',
-    photo: sparkleMonkeyPhoto,
-    websiteURL: 'http://sparklemonkey.space/',
-    description: 'Sparkle Monkey simplifies the process for music lovers to narrow down their search for concert events they would like to attend. Based on the users input of location and time range, Sparkle Monkey will plot the events on a Google map that is easily navigated. If maps aren\'t your jam, pun intended, click on the list view for easy scrolling. Both interfaces allow the user to click through to purchase tickets at the 3rd party vendor.',
+    name: 'Music Monkey',
+    photo: musicMonkeyPhoto,
+    websiteURL: 'http://musicmonkey.rocks/',
+    description: 'Music Monkey simplifies the process for music lovers to narrow down their search for concert events they would like to attend. Based on the users input of location and time range, Sparkle Monkey will plot the events on a Google map that is easily navigated. If maps aren\'t your jam, pun intended, click on the list view for easy scrolling. Both interfaces allow the user to click through to purchase tickets at the 3rd party vendor.',
     featureOne: 'Full-Stack application using the Ticketmaster API for event resources.',
     featureTwo: 'Utilized Google Maps & Spiderfy API\'s to plot the data for easy viewing.',
     featureThree: 'Accessibility integrations include multiple map color modes and Chrome Vox dication.',
