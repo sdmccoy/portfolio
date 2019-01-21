@@ -27,7 +27,7 @@ let pathsToClean = [
 
 //CleanPlugin omit cleaning cname file so gitpages reads the custom url
 let cleanOptions = {
-  exclude: ['CNAME'],
+  exclude: ['CNAME', 'favicon.png'],
 };
 
 // production plugins
