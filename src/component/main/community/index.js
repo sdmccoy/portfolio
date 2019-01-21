@@ -1,18 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import comingSoon from '../../../../assets/coming-soon.png';
 import coderDojoPhoto from '../../../../assets/coderdojo.png';
 import * as meetup from '../../../lib/meetup.js';
 import './_community.scss';
 
 class Community extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      meetup: meetup,
-    };
-  }
-
 
   render(){
     return(
@@ -34,16 +26,16 @@ class Community extends React.Component {
           </button>
           <div className='community-border'></div>
           <div className='meetup-container'>
-            <img className='meetup-logo' src={this.state.meetup.meetupLogo}/>
+            <img className='meetup-logo' src={meetup.meetupLogo}/>
             <h5>Actively attending, learning, and contributing to these Meetups</h5>
-            <img src={this.state.meetup.seattleJSHackersLogo}/>
-            <img src={this.state.meetup.seattleReactJSLogo}/>
-            <img src={this.state.meetup.newTechLogo}/>
-            <img src={this.state.meetup.seattleSoftCraftLogo}/>
-            <img src={this.state.meetup.nodeJSLogo}/>
-            <img src={this.state.meetup.seattleJSLogo}/>
-            <img src={this.state.meetup.hackerNewsLogo}/>
-            <img src={this.state.meetup.opCodeLogo}/>
+            <img src={meetup.seattleJSHackersLogo}/>
+            <img src={meetup.seattleReactJSLogo}/>
+            <img src={meetup.newTechLogo}/>
+            <img src={meetup.seattleSoftCraftLogo}/>
+            <img src={meetup.nodeJSLogo}/>
+            <img src={meetup.seattleJSLogo}/>
+            <img src={meetup.hackerNewsLogo}/>
+            <img src={meetup.opCodeLogo}/>
           </div>
         </div>
       </div>
