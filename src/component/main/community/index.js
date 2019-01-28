@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import coderDojoPhoto from '../../../../assets/coderdojo.png';
+import hackForGoodPhoto from '../../../../assets/hack-for-good.png';
 import * as meetup from '../../../lib/meetup.js';
 import './_community.scss';
 
@@ -14,6 +15,9 @@ class Community extends React.Component {
         </h2>
         <div className='volunteer-container'>
           <h3>Volunteer</h3>
+          <img src={hackForGoodPhoto} />
+          <h4>Microsoft: Hack for Good</h4>
+          <h5>Integrated a cloud based video-to-text transcriptor in Grace Children's Foundation application. A solution for communication issues with doctors and children in need of diagnosis</h5>
           <img src={coderDojoPhoto} />
           <h4>Seattle CoderDojo</h4>
           <h5>" Teaching Kids to Code - One Saturday at a Time " <br/> <br/>
